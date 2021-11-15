@@ -7,8 +7,7 @@ import {
     DownOutlined,
     UserOutlined,
     ShoppingCartOutlined,
-    MobileOutlined,
-    AudioOutlined,
+   
 } from '@ant-design/icons';
 const Header = () => {
     const menu = (
