@@ -4,7 +4,6 @@ import 'antd/dist/antd.css';
 import '../../../Assets/style.less';
 import { MenuOutlined } from '@ant-design/icons';
 
-
 const Body1_4 = () => {
     const menu = (
         <Menu>
@@ -39,10 +38,11 @@ const Body1_4 = () => {
         </Menu>
     );
     return (
-        <div className="Body1_1">
-           
-          
-            <div className="dropdown2"> <div className="catgories"><MenuOutlined /> categories</div>
+        <div className="Body1_4">
+            <div className="dropdown2">
+                <div className="catgories">
+                    <MenuOutlined /> categories
+                </div>
                 <Dropdown className="dropdown2-2" overlay={menu} arrow>
                     <a onClick={(e) => e.preventDefault()}>Hover me</a>
                 </Dropdown>
@@ -70,10 +70,9 @@ const Body1_4 = () => {
                 <Dropdown className="dropdown2-2" overlay={menu} arrow>
                     <a onClick={(e) => e.preventDefault()}>Hover me</a>
                 </Dropdown>{' '}
-                <Dropdown className="dropdown2-2" overlay={menu} >
+                <Dropdown className="dropdown2-2" overlay={menu}>
                     <a onClick={(e) => e.preventDefault()}>Hover me</a>
                 </Dropdown>
-               
             </div>
         </div>
     );

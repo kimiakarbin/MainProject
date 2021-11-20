@@ -4,7 +4,6 @@ import Body1_2 from './Body1_2/Body1_2';
 const Body1_23 = () => {
     return (
         <div className="Body1_23">
-            <Body1_2 />
             <Body1_3 />
         </div>
     );
