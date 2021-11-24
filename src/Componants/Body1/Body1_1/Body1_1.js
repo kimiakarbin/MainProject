@@ -1,8 +1,7 @@
-import react from 'react';
 import { Menu, Dropdown } from 'antd';
 import 'antd/dist/antd.css';
 import '../../../Assets/style.less';
-import { MenuOutlined } from '@ant-design/icons';
+import { MenuOutlined, RightOutlined } from '@ant-design/icons';
 
 const Body1_1 = () => {
     const menu = (
@@ -38,41 +37,141 @@ const Body1_1 = () => {
         </Menu>
     );
     return (
-        <div className="Body1_1">
-           
-          
-            <div className="dropdown2"> <div className="catgories"><MenuOutlined /> categories</div>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+        <div className="First--Body__Left--Container">
+            <div className="First--Body__Left--Container__Dropdown">
+                <div className="Left--Container__Title">
+                    <MenuOutlined /> Categories
+                </div>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Manufacturing & Processing machinery
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Consumer Electronics
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Industrial Equipment & Components
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Electrical & Electronics
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Construction & Decoration
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Light Industry & Daily Use
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Auto,Motorcycle Parts & Accessories
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Apparel & Accessories
+                    </a>
                 </Dropdown>
-                <Dropdown className="dropdown2-2" overlay={menu} arrow>
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
-                </Dropdown>{' '}
-                <Dropdown className="dropdown2-2" overlay={menu} >
-                    <a onClick={(e) => e.preventDefault()}>Hover me</a>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>Light & lighting</a>
                 </Dropdown>
-               
+                <Dropdown className="Left--Container__Dropdown" overlay={menu}>
+                    <a onClick={(e) => e.preventDefault()}>
+                        Sporting Goods & Recreation
+                    </a>
+                </Dropdown>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>Transportation</a>
+                </Dropdown>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>Arts & Crafts </a>
+                </Dropdown>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>Health & Medicine</a>
+                </Dropdown>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        Packaging & Printing
+                    </a>
+                </Dropdown>
+                <Dropdown
+                    className="Left--Container__Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>Computer Products</a>
+                </Dropdown>
+                <Dropdown
+                    className="Last--Left__Container--Dropdown"
+                    overlay={menu}
+                    arrow
+                >
+                    <a onClick={(e) => e.preventDefault()}>
+                        More Categories <RightOutlined />
+                    </a>
+                </Dropdown>
             </div>
         </div>
     );

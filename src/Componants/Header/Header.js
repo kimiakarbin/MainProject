@@ -1,13 +1,13 @@
 import react from 'react';
-import { Menu, Dropdown, Input, Space, Popover, Anchor, Button } from 'antd';
+import { Menu, Dropdown, Input } from 'antd';
 import made_in_iran from '../../Assets/Image/made_in_iran.png';
 import 'antd/dist/antd.css';
 import '../../Assets/style.less';
 import {
+    MobileOutlined,
     DownOutlined,
     UserOutlined,
     ShoppingCartOutlined,
-   
 } from '@ant-design/icons';
 const Header = () => {
     const menu = (
@@ -43,58 +43,57 @@ const Header = () => {
         </Menu>
     );
     const { Search } = Input;
-    const { Link } = Anchor;
 
     return (
         <div className="header">
             <div className>
-                {' '}
                 <img className="madeiniran" src={made_in_iran} alt="" />
-                <div className="dropdown1">
-                    <Dropdown className="dropdown1-1" overlay={menu}>
+                <div className="Header--Dropdown__Menu">
+                    <Dropdown className="Header--Dropdown" overlay={menu}>
                         <a onClick={(e) => e.preventDefault()}>
-                            Hover me <DownOutlined />
+                            For Buyer <DownOutlined />
                         </a>
                     </Dropdown>
 
-                    <Dropdown className="dropdown1-1" overlay={menu}>
+                    <Dropdown className="Header--Dropdown" overlay={menu}>
                         <a onClick={(e) => e.preventDefault()}>
-                            Hover me <DownOutlined />
+                            For Supplier
+                            <DownOutlined />
                         </a>
                     </Dropdown>
 
-                    <Dropdown className="dropdown1-1" overlay={menu}>
+                    <Dropdown className="Header--Dropdown" overlay={menu}>
                         <a onClick={(e) => e.preventDefault()}>
-                            Hover me <DownOutlined />
+                            <MobileOutlined /> Get App <DownOutlined />
                         </a>
                     </Dropdown>
 
-                    <Dropdown className="dropdown1-1" overlay={menu}>
+                    <Dropdown className="Header--Dropdown" overlay={menu}>
                         <a onClick={(e) => e.preventDefault()}>
-                            Hover me <DownOutlined />
+                            English <DownOutlined />
                         </a>
                     </Dropdown>
                 </div>
-                <div className="span">
-                    <span className="newhover">Products</span>
-                    <span className="newhover">Supplier</span>
-                    <span className="newhover">Sourcing Requests</span>
+                <div className="Header--Search__Tab">
+                    <span className="Search--Tab__Item">Products</span>
+                    <span className="Search--Tab__Item">Supplier</span>
+                    <span className="Search--Tab__Item">Sourcing Requests</span>
                 </div>
-                <div className="search1">
+                <div className="Header--Search__Box">
                     <Search
-                        className="search"
+                        className="Search--Box"
                         placeholder="input search text"
                         allowClear
                         enterButton="Search"
                         size="large"
                     />
-                    <div className="sign">
-                        <div className="sign1">
+                    <div className="Header--Button__Container">
+                        <div className="Sign--Container">
                             <UserOutlined style={{ fontSize: '32px' }} />
-                            <div className="sign2">
-                                <span className="newhover">Sign In</span>
+                            <div className="Sign--Join__Button">
+                                <span className="Sign--Button">Sign In</span>
                                 <br />
-                                <span className="newhover">Join free</span>
+                                <span className="Join--Button">Join free</span>
                             </div>
                         </div>
 
@@ -102,7 +101,9 @@ const Header = () => {
                             <ShoppingCartOutlined
                                 style={{ fontSize: '32px' }}
                             />
-                            <div className="sign3"> Inquiry Basket</div>
+                            <div className="Inquiry--Button">
+                                Inquiry Basket
+                            </div>
                         </div>
                     </div>
                 </div>

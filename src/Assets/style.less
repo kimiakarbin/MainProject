@@ -12,8 +12,6 @@
     height: 120px;
     display: flex;
 }
-.header2 {
-}
 .madeiniran {
     display: inline-flex;
 
@@ -21,41 +19,14 @@
 
     width: 14%;
 }
-
-.search1 {
+.Header--Dropdown__Menu {
+    margin-top: -100px;
     display: flex;
     flex-direction: row;
+    margin-right: 65px;
+    justify-content: flex-end;
 }
-.search {
-    width: 58%;
-    margin-top: 36px;
-    margin-left: 225px;
-}
-.sign {
-    display: flex;
-    margin-left: 60px;
-    margin-top: 43px;
-}
-.sign1 {
-    margin-right: 40px;
-}
-.sign2 {
-    margin-left: 45px;
-    margin-top: -40px;
-}
-.sign3 {
-    margin-left: 45px;
-    margin-top: -30px;
-}
-.sign3:hover {
-    color: #f44336;
-}
-.newhover {
-}
-.newhover:hover {
-    color: #f44336;
-}
-.dropdown1-1 {
+.Header--Dropdown {
     margin-top: 0.5%;
     flex-direction: row;
     color: black;
@@ -63,47 +34,50 @@
     margin-left: 31px;
     align-items: center;
 }
-.dropdown1 {
-    margin-top: -100px;
-    display: flex;
-    flex-direction: row;
-    margin-right: 65px;
-    justify-content: flex-end;
-}
-.span {
+.Header--Search__Tab {
     margin-bottom: -29px;
     margin-left: 15%;
     width: 300px;
     display: flex;
     justify-content: space-between;
 }
-
-/* .ant-space-item {
-    width: 720px;
+.Search--Tab__Item:hover {
+    color: #f44336;
 }
-.smeg {
+.Header--Search__Box {
     display: flex;
-    flex: 1 1;
-    width: 163px;
-    height: 100px;
-    margin-left: 50px;
-    margin-top: 20px;
+    flex-direction: row;
 }
-.space {
-    margin: 80px;
-    width: 900px;
-    width: 66%;
+.Search--Box {
+    width: 58%;
+    margin-top: 36px;
+    margin-left: 225px;
+}
+.Header--Button__Container {
     display: flex;
-} */
-/* .H2 {
-    height: 28px;
-    display: flex;
-    justify-content: space-between;
-    width: 505px;
-    padding-top: 3%;
-    margin-right: unset;
-} */
-
+    margin-left: 60px;
+    margin-top: 43px;
+}
+.Sign--Container {
+    margin-right: 40px;
+}
+.Sign--Join__Button {
+    margin-left: 45px;
+    margin-top: -40px;
+}
+.Sign--Button:hover {
+    color: #f44336;
+}
+.Join--Button:hover {
+    color: #f44336;
+}
+.Inquiry--Button {
+    margin-left: 45px;
+    margin-top: -30px;
+}
+.Inquiry--Button:hover {
+    color: #f44336;
+}
 .H1 {
     display: flex;
     justify-content: space-between;
@@ -118,32 +92,38 @@
 .Body1 {
     background-color: white;
     margin: 60px;
-    height: 510px;
+    height: 533px;
     margin-top: 90px;
 }
-.Body1_1 {
+.First--Body__Left--Container {
     margin-top: -65px;
     width: 20%;
-    height: 400px;
+    height: 411px;
     background-color: white;
     padding: 6px;
 }
-.catgories {
-    font-size: 19px;
-}
-.catgories:hover {
-    color: #f44336;
-}
-.dropdown2 {
+.First--Body__Left--Container__Dropdown {
     margin: 18px;
+    width: 265px;
     display: flex;
     flex-direction: column;
 }
-.dropdown2-2 {
-    color: black;
-    margin: 5px;
+.Left--Container__Title {
+    font-size: 19px;
+}
+.Left--Container__Title:hover {
+    color: #f44336;
+    cursor: pointer;
 }
 
+.Left--Container__Dropdown {
+    color: #555;
+    margin: 5px;
+    font-size: 12px;
+}
+.Last--Left__Container--Dropdown {
+    color: #1470cc;
+}
 .Body1_2 {
     width: 55%;
     margin: auto;
@@ -196,13 +176,68 @@
     background-color: #5bcf5b;
     height: 125px;
 }
-.Body1_4 {
-    width: 20%;
+.First--Body__Right--Container {
+    width: 22%;
     height: 490px;
     background-color: white;
-
     margin-left: auto;
     margin-top: -505px;
+}
+.First--Body__Right--Container__Item {
+    margin: 18px;
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+}
+.Right--Container__Title {
+    font-size: 19px;
+    margin-top: 1px;
+}
+.Right--Container__Title:hover {
+    color: #f44336;
+    cursor: pointer;
+}
+.Right--Container__Dropdown {
+    color: #555;
+    margin: 5px;
+    font-size: 12px;
+}
+.Right--Container__Items {
+    display: flex;
+    margin: 3px;
+}
+.Text--Item {
+    margin-top: 11px;
+    margin-left: 11px;
+}
+.Type--Of__Products {
+    color: black;
+}
+.Number--Of__Products {
+    color: #555;
+    font-size: 12px;
+}
+.Text--Item:hover .Type--Of__Products {
+    color: #f44336;
+}
+.Text--Item:hover .Number--Of__Products {
+    color: #f44336;
+}
+.Add--Products__Container {
+    margin-top: 27px;
+    display: inline-grid;
+}
+.Add--Products__Question {
+    color: #555;
+}
+.Add--Products__Button {
+    width: -webkit-fill-available;
+    margin-right: auto;
+    border-width: thin;
+}
+.Add--Products__Button:hover {
+    background-color: #f44336;
+    color: white;
 }
 .Icon_Bar {
     position: fixed;
