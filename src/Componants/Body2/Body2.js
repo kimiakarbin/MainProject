@@ -3,56 +3,57 @@ import img from '../img.JPG';
 const Body2 = () => {
     return (
         <div className="Body2">
+            <h2>Selected Trending Products</h2>
             <div className="Body2_image1">
-                <div>
+                <div className="sss">
                     <img className="image1" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                    <p className="image-text">Rotary Pump</p>
                 </div>
-                <div>
-                    <img className="image2" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Construction machinery</p>
                 </div>
-                <div>
-                    <img className="image3" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">PVC Floor</p>
                 </div>
-                <div>
-                    <img className="image4" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Paper Bag Making Machine</p>
                 </div>
-                <div>
-                    <img className="image5" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Chainsaw And Parts</p>
                 </div>
-                <div>
-                    <img className="image6" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Plastic Bottles</p>
                 </div>
             </div>
             <div className="Body2_image2">
-                <div>
+                <div className="sss">
                     <img className="image1" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                    <p className="image-text">Bearing</p>
                 </div>
-                <div>
-                    <img className="image2" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Decoration & Construction</p>
                 </div>
-                <div>
-                    <img className="image3" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Lighting Decoration</p>
                 </div>
-                <div>
-                    <img className="image4" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Fastener</p>
                 </div>
-                <div>
-                    <img className="image5" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Fitness Equipment</p>
                 </div>
-                <div>
-                    <img className="image6" src={img} alt="" />
-                    <p className="image-text">lorefdjkns,mnedc</p>
+                <div className="sss">
+                    <img className="image1" src={img} alt="" />
+                    <p className="image-text">Selected Supplier</p>
                 </div>
             </div>
         </div>

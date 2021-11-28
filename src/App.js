@@ -4,9 +4,9 @@ import './Assets/style.less';
 import Icon_Bar from './Componants/Icon_Bar/Icon_bar';
 import Body2 from './Componants/Body2/Body2';
 import Body3 from './Componants/Body3/Body3';
-import Body4 from './Componants/Body4/Body4';
-import Body5 from './Componants/Body5/Body5';
+
 import Body6 from './Componants/Body6/Body6';
+import Body7 from './Componants/Icon_Bar/Body7/Body7';
 
 function App() {
     return (
@@ -15,10 +15,10 @@ function App() {
             <Body1 />
             <Body2 />
             <Body3 />
-            <Body4 />
-            <Body5 />
             <Body6 />
             <Icon_Bar />
+            <h2>Sourcing Solutions & Tailored Services</h2>
+            <Body7 />
         </div>
     );
 }
