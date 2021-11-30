@@ -5,8 +5,20 @@ import solutions_pic4 from '../../../Assets/Image/solutions_pic4.jpg';
 import Apparel_Textile from '../../../Assets/Image/Apparel_Textile.jpg';
 import Lights_Construction from '../../../Assets/Image/Lights_Construction.jpg';
 import Agriculture_Raw_Materials from '../../../Assets/Image/Agriculture_Raw_Materials.jpg';
+import construction_decoration  from '../../../Assets/Image/construction_decoration.jpg';
+import transportation from '../../../Assets/Image/transportation.jpg';
+import security_protection from '../../../Assets/Image/security_protection.jpg';
+import torch_flashlight from '../../../Assets/Image/torch_flashlight.jpg';
+import umbrella from '../../../Assets/Image/umbrella.jpg';
+import mug from '../../../Assets/Image/mug.jpg';
+import advance_1637732192000 from '../../../Assets/Image/advance_1637732192000.webp';
+import advance_1637732217000 from '../../../Assets/Image/advance_1637732217000.webp';
+import advance_1637732257000 from '../../../Assets/Image/advance_1637732257000.webp';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
+
+
+
 const Body7 = () => {
     return (
         <div className="Body7">
@@ -65,6 +77,29 @@ const Body7 = () => {
                     </p>
                     {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
                 </div>
+                <div className="hg">
+                <div className="sd">
+                    <img src={torch_flashlight} alt="" className="ww" />
+                    <p>
+                        Constructions <br/> & Decoration
+                    </p>
+                </div>
+                <div className="sd"> 
+                    <img src={umbrella} alt="" className="ww" />
+                    <p>
+                      Transportation
+                    </p>
+                </div>
+                <div className="sd"> 
+                    <img src={mug} alt="" className="ww" />
+                    <p>
+                      Security & <br/>Protection
+                    </p>
+                </div>
+                
+
+
+                </div>
             </div>
             <div className="solution">
                 <div>
@@ -80,22 +115,68 @@ const Body7 = () => {
                     </p>
                     {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
                 </div>
-            </div>
-            <div className="solution">
-                <div>
-                    <img className="w" src={solutions_pic4} alt="" />
-                </div>
-                <div className="ff">
-                    <h1>Smart Expo</h1>
+
+                <div className="hg">
+                    <div className="sd">
+                    <img src={construction_decoration} alt="" className="ww" />
                     <p>
+                        Constructions <br/> & Decoration
+                    </p>
+                     </div>
+                    <div className="sd"> 
+                    <img src={transportation} alt="" className="ww" />
+                    <p>
+                      Transportation
+                    </p>
+                     </div>
+                     <div className="sd"> 
+                    <img src={security_protection} alt="" className="ww" />
+                    <p>
+                      Security & <br/>Protection
+                    </p>
+                     </div>
+                
+
+                   </div>
+            </div>
+
+
+            <div className="solution">
+                   <div>
+                    <img className="w" src={solutions_pic4} alt="" />
+                   </div>
+                   <div className="ff">
+                      <h1>Smart Expo</h1>
+                     <p>
                         Reliable China Supplier
                         <br />
                         Recommended at World's Famous Trade <br />
                         Shows
+                      </p>
+                      {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
+                    </div>
+                <div className="hg">
+                <div className="sd">
+                    <img src={advance_1637732192000} alt="" className="ww" />
+                    <p>
+                        Constructions <br/> & Decoration
                     </p>
-                    {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
                 </div>
+                <div className="sd"> 
+                    <img src={advance_1637732217000} alt="" className="ww" />
+                    <p>
+                      Transportation
+                    </p>
+                </div>
+                <div className="sd"> 
+                    <img src={advance_1637732257000} alt="" className="ww" />
+                    <p>
+                      Security & <br/>Protection
+                    </p>
+                </div>
+                
             </div>
+               </div>
         </div>
     );
 };
