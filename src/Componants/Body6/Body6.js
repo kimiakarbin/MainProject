@@ -1,14 +1,14 @@
 import { BackTop } from 'antd';
 import easysourcing from '../../Assets/Image/easysourcing.jpg';
 import { RightOutlined } from '@ant-design/icons';
-import Input from './Input/Input';
+import SourcingForm from './SourcingForm/SourcingForm';
 const Body6 = () => {
     return (
         <div className="Body6">
             <div>
-                <img className="aaa" src={easysourcing} alt="" />
+                <img className="Sourcing--Theme" src={easysourcing} alt="" />
             </div>
-            <div className="bbb">
+            <div className="Sourcing--Text">
                 <div>
                     <h1>EASY SOURCING</h1>
                     <p>
@@ -28,9 +28,9 @@ const Body6 = () => {
                         <RightOutlined />
                     </span>
                 </div>
-                <div className="ccc">
+                <div className="Sourcing--Form">
                     <h2>Want to get quotations?</h2>
-                    <Input />
+                    <SourcingForm />
                 </div>
             </div>
         </div>

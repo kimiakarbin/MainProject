@@ -1,22 +1,28 @@
 import { Input, Select, Option, Button } from 'antd';
 
-const Inputt = () => {
+const SourcingForm = () => {
     const { TextArea } = Input;
     const { Option } = Select;
     return (
-        <div className="Input">
-            <Input className="xxx" placeholder="Product Name or Keywords" />
+        <div>
+            <Input
+                className="Form--Text"
+                placeholder="Product Name or Keywords"
+            />
             <TextArea
-                className="yyy"
+                className="Form--Textarea"
                 placeholder="Product Description"
                 autoSize={{ minRows: 3, maxRows: 5 }}
             />
-            <div className="mmm">
-                <Input className="zzz" placeholder="Purchase Quantity" />
-                <Input.Group compact className="nnn">
+            <div className="Form--Item">
+                <Input
+                    className="Input--Quantity"
+                    placeholder="Purchase Quantity"
+                />
+                <Input.Group compact className="Form--Option__Sourcing">
                     <Select
                         defaultValue="piece(s)"
-                        className="vvv"
+                        className="Options--Group"
                         style={{ width: '100%' }}
                     >
                         <Option value="20' Container">20' Container</Option>
@@ -43,11 +49,11 @@ const Inputt = () => {
                     </Select>
                 </Input.Group>
             </div>
-            <Button className="qqq" type="primary">
+            <Button className="Form--Button" type="primary">
                 Post Your Request Now
             </Button>
         </div>
     );
 };
 
-export default Inputt;
+export default SourcingForm;
