@@ -2,9 +2,9 @@ import { BackTop } from 'antd';
 import easysourcing from '../../Assets/Image/easysourcing.jpg';
 import { RightOutlined } from '@ant-design/icons';
 import SourcingForm from './SourcingForm/SourcingForm';
-const Body6 = () => {
+const Sourcing = () => {
     return (
-        <div className="Body6">
+        <div className="ُSouring">
             <div>
                 <img className="Sourcing--Theme" src={easysourcing} alt="" />
             </div>
@@ -37,4 +37,4 @@ const Body6 = () => {
     );
 };
 
-export default Body6;
+export default Sourcing;

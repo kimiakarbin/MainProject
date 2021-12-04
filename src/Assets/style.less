@@ -3,10 +3,10 @@
 .App {
     background: #f0f1f2;
 }
-.App h2 {
-    display: flex;
-    justify-content: center;
-}
+// .App h2 {
+//     display: flex;
+//     justify-content: center;
+// }
 .Header {
     flex-direction: column;
     position: sticky;
@@ -93,8 +93,10 @@
     margin-top: 10px;
     margin-right: unset;
 }
-
-.Body1 {
+.Case-Desc {
+    display: flex;
+}
+.Main--Content {
     background-color: white;
     margin: 60px;
     height: 533px;
@@ -120,36 +122,24 @@
     color: #f44336;
     cursor: pointer;
 }
-
+.First--Body__Left--Container__Title {
+    margin: 10px;
+}
 .Left--Container__Dropdown {
     color: #555;
-    margin: 5px;
+    display: block;
+    margin: 10px;
     font-size: 12px;
 }
 .Last--Left__Container--Dropdown {
     color: #1470cc;
 }
-.Body1_2 {
+.Carousel {
     width: 55%;
     margin: auto;
     margin-top: -390px;
 }
-.Body1_3 {
-    display: flex;
-    width: 55%;
-    margin: auto;
-    margin-top: -125px;
-}
 
-.Body1_3_1 {
-    display: flex;
-    flex: 1.5;
-    margin: 1%;
-    margin-left: 0;
-    background-color: #f5f5f5;
-    position: relative;
-    overflow: hidden;
-}
 .Arrow--Icon {
     width: 100%;
     display: flex;
@@ -172,20 +162,15 @@
         left: 0px;
     }
 }
-.Body1_3_2 {
-    display: flex;
-    flex: 1;
-
+.Spotlight--Item {
     margin: 1%;
-
     background-color: #f5f5f5;
+    width: 166px;
+    height: 135px;
 }
-.Body1_3_3 {
+.Case--Desc {
     display: flex;
-    flex: 1;
-
-    margin: 1%;
-    background-color: #f5f5f5;
+    margin-left: 287px;
 }
 .Body1_3_4 {
     display: flex;
@@ -206,6 +191,7 @@
     background-color: white;
     margin-left: auto;
     margin-top: -366px;
+    margin-top: -511px;
 }
 .First--Body__Right--Container__Item {
     margin: 18px;
@@ -337,103 +323,80 @@
 //     margin-right: -98px;
 //     margin-bottom: 76px;
 // }
-.Body2 {
+.Select--Trending {
     background-color: white;
     margin: 60px;
-    height: 694px;
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
-.Body2_image1 {
+.Trend--Items {
     display: flex;
-    margin: 30px;
-    margin-top: 45px;
+    flex-wrap: wrap;
 }
-.Body2 h2 {
-    margin-top: 30px;
-    margin-left: 32px;
-    margin-bottom: -11px;
+.Trending--Title {
+    margin: 10px;
+    text-align: left;
+    display: flex;
 }
-.sss {
+
+.Trend--Product {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 250px;
+    width: 218px;
 }
 
-.Body2_image2 {
-    display: flex;
-    margin: 30px;
-    margin-top: 15px;
-}
-.image1 {
+.Trend--Product__Image {
     height: 190px;
     width: 90%;
     cursor: pointer;
     transform: 0.3s ease-out;
 }
-.image1:hover {
-    width: 91%;
+.Trend--Product__Image:hover {
+    color: #f44336;
     height: 200px;
 }
+.Trend--Product:hover {
+    color: #f44336;
+    cursor: pointer;
+}
 
-.image-text {
+.Trend--Product__Text {
     display: flex;
     justify-content: center;
     margin-top: 24px;
 }
-.image-text:hover {
-    color: #f44336;
-    cursor: pointer;
-}
-.Body3 {
+
+.Industry--Booth {
     background-color: white;
     margin: 60px;
     height: 500px;
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
 }
-.image31 {
+.Industry--Image__Background {
     display: flex;
     flex: 1;
     width: 281px;
     height: 499px;
 }
-.Body3_2_1 {
+.Industry--Products {
     display: flex;
     flex-direction: row;
-    flex: 4;
-    height: 249px;
+    flex: 4 1;
+    flex-wrap: wrap;
+    height: 499px;
 }
-.Body3_2_2 {
-    display: flex;
-    flex-direction: row;
-    flex: 4;
-    height: 250px;
-}
-.image3_1 {
+.Industry--Products__Image {
     display: flex;
     width: 25%;
-}
-.image3_2 {
-    display: flex;
-
-    width: 25%;
-}
-.image3_3 {
-    display: flex;
-
-    width: 25%;
+    height: 249.5;
 }
 
-.image3_4 {
-    display: flex;
-    width: 25%;
-}
-
-.Body6 {
+.Sourcing {
     margin: 60px;
     height: 384px;
 }
