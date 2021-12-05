@@ -1,21 +1,20 @@
-import { Menu, Dropdown } from 'antd';
-import 'antd/dist/antd.css';
-import '../../Assets/style.less';
-import { MenuOutlined, RightOutlined } from '@ant-design/icons';
-import { Carousel } from 'antd';
 import banner990X400 from '../../Assets/Image/banner990X400.png';
 import banner990X4001 from '../../Assets/Image/banner990X4001.png';
 import banner990X4003 from '../../Assets/Image/banner990X4003.jpg';
 import banner990X4002 from '../../Assets/Image/banner990X4002.jpg';
-import { Button } from 'antd';
-import 'antd/dist/antd.css';
-import '../../Assets/style.less';
 import High_Quality_Hydraulic_Pump from '../../Assets/Image/High_Quality_Hydraulic_Pump.webp';
 import Hot_Sale from '../../Assets/Image/Hot_Sale.webp';
 import New_Style from '../../Assets/Image/New_Style.webp';
 import Wholesale_Office_School from '../../Assets/Image/Wholesale_Office_School.webp';
 import Low_Price from '../../Assets/Image/Low_Price.webp';
-import { ArrowRightOutlined } from '@ant-design/icons';
+import 'antd/dist/antd.css';
+import '../../Assets/style.less';
+import { Menu, Dropdown, Button, Carousel } from 'antd';
+import {
+    MenuOutlined,
+    RightOutlined,
+    ArrowRightOutlined,
+} from '@ant-design/icons';
 
 const MainContent = () => {
     const menu = (

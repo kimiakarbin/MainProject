@@ -1,10 +1,10 @@
-import { BackTop } from 'antd';
 import easysourcing from '../../Assets/Image/easysourcing.jpg';
 import { RightOutlined } from '@ant-design/icons';
 import SourcingForm from './SourcingForm/SourcingForm';
+
 const Sourcing = () => {
     return (
-        <div className="ُSouring">
+        <div className="Sourcing">
             <div>
                 <img className="Sourcing--Theme" src={easysourcing} alt="" />
             </div>

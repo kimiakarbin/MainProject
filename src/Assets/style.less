@@ -295,7 +295,7 @@
     margin-left: 18%;
 }
 
-.Arrow--Up__Iconn {
+.Arrow--BackUp__Icon {
     border-radius: 8px;
     border: solid #73ace6;
     height: 51px;
@@ -351,17 +351,25 @@
     height: 190px;
     width: 90%;
     cursor: pointer;
-    transform: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    transform: scale(1, 1);
 }
 .Trend--Product__Image:hover {
     color: #f44336;
-    height: 200px;
+    transform: scale(1.1, 1.1);
 }
 .Trend--Product:hover {
     color: #f44336;
     cursor: pointer;
 }
-
+.Industry--Booth__Item button {
+    margin-left: 28px;
+    margin-top: 15px;
+}
+.Industry--Booth__Item h2 {
+    margin-top: -475px;
+    margin-left: 20px;
+}
 .Trend--Product__Text {
     display: flex;
     justify-content: center;
@@ -394,8 +402,33 @@
     display: flex;
     width: 25%;
     height: 249.5;
-}
+    /* align-self: self-end; */
+    /* margin: 52px; */
+    width: 128px;
+    /* margin-right: 182px; */
+    margin-left: 110px;
+    margin-top: 43px;
+    transform: scale(1, 1);
 
+    transition: transform 0.3s ease-out;
+}
+.Industry--Products__Image:hover {
+    transform: scale(1.2, 1.2);
+}
+.dk {
+    width: 259px;
+}
+.dk h3 {
+    display: flex;
+    /* justify-content: center; */
+    padding: 6px;
+    padding-bottom: 0;
+    padding-left: 35px;
+    margin-top: 12px;
+}
+.dk h3:hover {
+    color: #f44336;
+}
 .Sourcing {
     margin: 60px;
     height: 384px;
@@ -404,8 +437,7 @@
     width: 100%;
     height: 384px;
 }
-.Body6 {
-}
+
 .Sourcing--Text {
     display: flex;
     flex-direction: row;

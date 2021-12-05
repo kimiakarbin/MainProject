@@ -1,17 +1,15 @@
-import Header from './Componants/Header/Header';
-
+import Header from './Components/Header/Header';
+import Icon_Bar from './Components/Icon_Bar/Icon_bar';
+import Footer from './Components/Footer/Footer';
+import HotItems from './Components/HotItems/HotItems';
+import TradeShow from './Components/TradeShow/TradeShow';
+import Solution from './Components/Solution/Solution';
+import Sourcing from './Components/Sourcing/Sourcing';
+import SelectTrending from './Components/SelectTrending/SelectTrending';
+import MainContent from './Components/MainContent/MainContent';
+import IndustryBooth from './Components/IndustryBooth/IndustryBooth';
 import './Assets/style.less';
-import Icon_Bar from './Componants/Icon_Bar/Icon_bar';
 
-import Footer from './Componants/Footer/Footer';
-import HotItems from './Componants/HotItems/HotItems';
-import TradeShow from './Componants/TradeShow/TradeShow';
-import Solution from './Componants/Solution/Solution';
-import Sourcing from './Componants/Sourcing/Sourcing';
-import SelectTrending from './Componants/SelectTrending/SelectTrending';
-import MainContent from './Componants/MainContent/MainContent';
-
-import IndustryBooth from './Componants/IndustryBooth/IndustryBooth';
 function App() {
     return (
         <div className="App">

@@ -1,4 +1,4 @@
-import { Input, Select, Option, Button } from 'antd';
+import { Input, Select, Button } from 'antd';
 
 const SourcingForm = () => {
     const { TextArea } = Input;

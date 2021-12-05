@@ -14,7 +14,6 @@ import mug from '../../Assets/Image/mug.jpg';
 import advance_1637732192000 from '../../Assets/Image/advance_1637732192000.webp';
 import advance_1637732217000 from '../../Assets/Image/advance_1637732217000.webp';
 import advance_1637732257000 from '../../Assets/Image/advance_1637732257000.webp';
-import { ArrowRightOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
 
 const Solution = () => {
@@ -38,7 +37,7 @@ const Solution = () => {
                             Industry Competitiveness <br />
                             Original Products{' '}
                         </p>
-                        {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
+                      
                     </div>
                     <div className="Solution--Prods">
                         <div className="Prods--Item">
@@ -92,7 +91,7 @@ const Solution = () => {
                             Innovative Design <br />
                             Awarded by Industry Experts
                         </p>
-                        {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
+                     
                     </div>
                     <div className="Solution--Prods">
                         <div className="Prods--Item">
@@ -134,7 +133,6 @@ const Solution = () => {
                             Make Your Own Design <br />
                             Sample Available
                         </p>
-                        {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
                     </div>
                     <div className="Solution--Prods">
                         <div className="Prods--Item">
@@ -185,7 +183,7 @@ const Solution = () => {
                             Recommended at World's Famous Trade <br />
                             Shows
                         </p>
-                        {/* <ArrowRightOutlined className="Arrow--Icon" /> */}
+                      
                     </div>
                     <div className="Solution--Prods">
                         <div className="Prods--Item">
