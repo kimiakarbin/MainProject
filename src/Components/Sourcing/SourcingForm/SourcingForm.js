@@ -1,23 +1,35 @@
 import { Input, Select, Button } from 'antd';
-
+import { useState } from 'react';
 const SourcingForm = () => {
+    const [productName, setProductName] = useState('');
+    const [productDescription, setProductDescription] = useState('');
+    const [purchaseQuantity, setPurchaseQuantity] = useState('');
+
     const { TextArea } = Input;
     const { Option } = Select;
     return (
-        <div>
+        <form onSubmit={handleSubmit}>
             <Input
+                value={productName}
                 className="Form--Text"
                 placeholder="Product Name or Keywords"
+                onChange={(event) => setProductName(event.target.value)}
             />
             <TextArea
+                value={productDescription}
                 className="Form--Textarea"
                 placeholder="Product Description"
                 autoSize={{ minRows: 3, maxRows: 5 }}
+                onChange={(event) => setProductDescription(event.target.value)}
             />
             <div className="Form--Item">
                 <Input
+                    value={purchaseQuantity}
                     className="Input--Quantity"
                     placeholder="Purchase Quantity"
+                    onChange={(event) =>
+                        setPurchaseQuantity(event.target.value)
+                    }
                 />
                 <Input.Group compact className="Form--Option__Sourcing">
                     <Select
@@ -52,7 +64,7 @@ const SourcingForm = () => {
             <Button className="Form--Button" type="primary">
                 Post Your Request Now
             </Button>
-        </div>
+        </form>
     );
 };
 

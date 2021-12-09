@@ -1,12 +1,14 @@
 import made_in_iran from '../../Assets/Image/made_in_iran.png';
+import GGButton from '../../ReuseableComponents/GGButton/GGButton';
 import { Menu, Dropdown, Input } from 'antd';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 import {
     MobileOutlined,
     DownOutlined,
     UserOutlined,
     ShoppingCartOutlined,
 } from '@ant-design/icons';
+import clsx from 'clsx';
 
 const Header = () => {
     const menu = (
@@ -41,70 +43,97 @@ const Header = () => {
             <Menu.Item danger>a danger item</Menu.Item>
         </Menu>
     );
+
+    const language = (
+        <Menu>
+            <Menu.Item>English</Menu.Item>
+            <Menu.Item>فارسی</Menu.Item>
+            <Menu.Item>عربی</Menu.Item>
+        </Menu>
+    );
+
     const { Search } = Input;
 
     return (
         <div className="Header">
-            <div>
-                <img className="Made_In_Iran" src={made_in_iran} alt="" />
-                <div className="Header--Dropdown__Menu">
-                    <Dropdown className="Header--Dropdown" overlay={menu}>
-                        <a onClick={(e) => e.preventDefault()}>
-                            For Buyer <DownOutlined />
-                        </a>
-                    </Dropdown>
-
-                    <Dropdown className="Header--Dropdown" overlay={menu}>
-                        <a onClick={(e) => e.preventDefault()}>
-                            For Supplier
-                            <DownOutlined />
-                        </a>
-                    </Dropdown>
-
-                    <Dropdown className="Header--Dropdown" overlay={menu}>
-                        <a onClick={(e) => e.preventDefault()}>
-                            <MobileOutlined /> Get App <DownOutlined />
-                        </a>
-                    </Dropdown>
-
-                    <Dropdown className="Header--Dropdown" overlay={menu}>
-                        <a onClick={(e) => e.preventDefault()}>
-                            English <DownOutlined />
-                        </a>
-                    </Dropdown>
-                </div>
-                <div className="Header--Search__Tab">
-                    <span className="Search--Tab__Item">Products</span>
-                    <span className="Search--Tab__Item">Supplier</span>
-                    <span className="Search--Tab__Item">Sourcing Requests</span>
-                </div>
-                <div className="Header--Search__Box">
-                    <Search
-                        className="Search--Box"
-                        placeholder="input search text"
-                        allowClear
-                        enterButton="Search"
-                        size="large"
-                    />
-                    <div className="Header--Button__Container">
-                        <div className="Sign--Container">
-                            <UserOutlined style={{ fontSize: '32px' }} />
-                            <div className="Sign--Join__Button">
-                                <span className="Sign--Button">Sign In</span>
-                                <br />
-                                <span className="Join--Button">Join free</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <ShoppingCartOutlined
-                                style={{ fontSize: '32px' }}
-                            />
-                            <div className="Inquiry--Button">
-                                Inquiry Basket
-                            </div>
-                        </div>
+            <div className="Header--First__Row">
+                <Dropdown className="Header--Dropdown" overlay={menu}>
+                    <div>
+                        <GGButton className="BlackLink" value="For Buyer" />
+                        <DownOutlined />
                     </div>
+                </Dropdown>
+
+                <Dropdown className="Header--Dropdown" overlay={menu}>
+                    <div>
+                        <GGButton className="BlackLink" value="For Supplier" />
+                        <DownOutlined />
+                    </div>
+                </Dropdown>
+
+                <Dropdown className="Header--Dropdown" overlay={menu}>
+                    <div>
+                        <MobileOutlined />
+                        <GGButton className="BlackLink" value="Get App" />
+                        <DownOutlined />
+                    </div>
+                </Dropdown>
+
+                <Dropdown className="Header--Dropdown" overlay={language}>
+                    <div>
+                        <GGButton className="BlackLink" value="English" />
+                        <DownOutlined />
+                    </div>
+                </Dropdown>
+            </div>
+
+            <div className="Header--Second__Row">
+                <div className="Header--Image">
+                    <img src={made_in_iran} alt="" />
+                </div>
+                <div className="Header--Search__Bar">
+                    <div className="Header--Search__Tab">
+                        <GGButton
+                            className={clsx('Search--Tab__Item', 'BlackLink')}
+                            value="Products"
+                        />
+                        <GGButton
+                            className={clsx('Search--Tab__Item', 'BlackLink')}
+                            value="Supplier"
+                        />
+                        <GGButton
+                            className={clsx('Search--Tab__Item', 'BlackLink')}
+                            value="Sourcing Requests"
+                        />
+                    </div>
+                    <div className="Header--Search__Box">
+                        <Search
+                            placeholder="input search text"
+                            allowClear
+                            enterButton="Search"
+                            size="large"
+                        />
+                    </div>
+                </div>
+
+                <div className="Sign--Container">
+                    <UserOutlined style={{ fontSize: '32px' }} />
+                    <div className="Sign--Join__Button">
+                        <GGButton
+                            className={clsx('Sign--Button', 'BlackLink')}
+                            value="Sign In"
+                        />
+                        <br />
+                        <GGButton
+                            className={clsx('Sign--Button', 'BlackLink')}
+                            value="Join free"
+                        />
+                    </div>
+                </div>
+
+                <div className="Inquiry--Button">
+                    <ShoppingCartOutlined style={{ fontSize: '32px' }} />
+                    <GGButton className="BlackLink" value="Inquiry Basket" />
                 </div>
             </div>
         </div>

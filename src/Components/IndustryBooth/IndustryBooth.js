@@ -8,6 +8,7 @@ import Decoration_Materials from '../../Assets/Image/Decoration_Materials.webp';
 import China_Building from '../../Assets/Image/China_Building.webp';
 import Aluminum_Window from '../../Assets/Image/Aluminum_Window.jpg';
 import { Button } from 'antd';
+import clsx from 'clsx';
 
 const IndustryBooth = () => {
     return (
@@ -24,64 +25,64 @@ const IndustryBooth = () => {
                 </Button>
             </div>
             <div className="Industry--Products">
-                <div className="dk">
-                    <h3>Wig</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Wig</p>
                     <img
                         className="Industry--Products__Image"
                         src={Wig}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>Sunglasses</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Sunglasses</p>
                     <img
                         className="Industry--Products__Image"
                         src={Sunglasses}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>Medal</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Medal</p>
                     <img
                         className="Industry--Products__Image"
                         src={Medal}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>Human Hair</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Human Hair</p>
                     <img
                         className="Industry--Products__Image"
                         src={Human_Hair}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>Door</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Door</p>
                     <img
                         className="Industry--Products__Image"
                         src={Door}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>Decoration Materials</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Decoration Materials</p>
                     <img
                         className="Industry--Products__Image"
                         src={Decoration_Materials}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>China Building</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>China Building</p>
                     <img
                         className="Industry--Products__Image"
                         src={China_Building}
                         alt=""
                     />
                 </div>
-                <div className="dk">
-                    <h3>Aluminum Window</h3>
+                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                    <p>Aluminum Window</p>
                     <img
                         className="Industry--Products__Image"
                         src={Aluminum_Window}

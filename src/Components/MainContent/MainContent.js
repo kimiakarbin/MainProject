@@ -5,6 +5,11 @@ import banner990X4002 from '../../Assets/Image/banner990X4002.jpg';
 import High_Quality_Hydraulic_Pump from '../../Assets/Image/High_Quality_Hydraulic_Pump.webp';
 import Hot_Sale from '../../Assets/Image/Hot_Sale.webp';
 import New_Style from '../../Assets/Image/New_Style.webp';
+import smart_expo from '../../Assets/Image/smart_expo.png';
+import Online_Trading from '../../Assets/Image/Online_Trading.webp';
+import Star_Suppliers from '../../Assets/Image/Star_Suppliers.webp';
+import Leading_Supplier from '../../Assets/Image/Leading_Supplier.webp';
+
 import Wholesale_Office_School from '../../Assets/Image/Wholesale_Office_School.webp';
 import Low_Price from '../../Assets/Image/Low_Price.webp';
 import 'antd/dist/antd.css';
@@ -15,6 +20,7 @@ import {
     RightOutlined,
     ArrowRightOutlined,
 } from '@ant-design/icons';
+import GGButton from '../../ReuseableComponents/GGButton/GGButton';
 
 const MainContent = () => {
     const menu = (
@@ -51,11 +57,10 @@ const MainContent = () => {
     );
     return (
         <div className="Main--Content">
-            <div className="First--Body__Left--Container">
-                <div className="First--Body__Left--Container__Title">
-                    <h2>
-                        <MenuOutlined /> Categories
-                    </h2>
+            <div className="Main--Content__Left--Container">
+                <div className="Main--Content__Left--Container__Title">
+                    <MenuOutlined />
+                    <GGButton className="BlackLink" value="Categories" />
                 </div>
                 <div>
                     <Dropdown
@@ -63,134 +68,146 @@ const MainContent = () => {
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Manufacturing & Processing machinery
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="Manufacturing & Processing machinery"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Consumer Electronics
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value=" Consumer Electronics"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Industrial Equipment & Components
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value=" Industrial Equipment & Components"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Electrical & Electronics
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="  Electrical & Electronics"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Construction & Decoration
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="  Construction & Decoration"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Light Industry & Daily Use
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value=" Light Industry & Daily Use"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Auto,Motorcycle Parts & Accessories
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="Auto,Motorcycle Parts & Accessories"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Apparel & Accessories
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="Apparel & Accessories"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Light & lighting
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value=" Light & lighting"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Sporting Goods & Recreation
-                        </a>
-                    </Dropdown>
-                    <Dropdown
-                        className="Left--Container__Dropdown"
-                        overlay={menu}
-                        arrow
-                    >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Transportation
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="Sporting Goods & Recreation"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Arts & Crafts{' '}
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value=" Transportation"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Health & Medicine
-                        </a>
+                        <GGButton className="GrayLink" value="Arts & Crafts" />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Packaging & Printing
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="Health & Medicine"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Left--Container__Dropdown"
                         overlay={menu}
                         arrow
                     >
-                        <a onClick={(e) => e.preventDefault()}>
-                            Computer Products
-                        </a>
+                        <GGButton
+                            className="GrayLink"
+                            value="Packaging & Printing"
+                        />
+                    </Dropdown>
+                    <Dropdown
+                        className="Left--Container__Dropdown"
+                        overlay={menu}
+                        arrow
+                    >
+                        <GGButton
+                            className="GrayLink"
+                            value=" Computer Products"
+                        />
                     </Dropdown>
                     <Dropdown
                         className="Last--Left__Container--Dropdown"
@@ -205,8 +222,8 @@ const MainContent = () => {
             </div>
 
             <div>
-                <div>
-                    <Carousel className="Carousel" autoplay>
+                <div className="Main--Content__Carousel">
+                    <Carousel autoplay>
                         <div>
                             <img
                                 src={banner990X400}
@@ -244,23 +261,36 @@ const MainContent = () => {
 
                 <div className="Case--Desc">
                     <div className="Spotlight--Item">
+                        <img className="Spotlight--Image" src={smart_expo} />
                         <ArrowRightOutlined className="Arrow--Icon" />
                     </div>
                     <div className="Spotlight--Item">
+                        <img
+                            className="Spotlight--Image"
+                            src={Online_Trading}
+                        />
                         <ArrowRightOutlined className="Arrow--Icon" />
                     </div>
                     <div className="Spotlight--Item">
+                        <img
+                            className="Spotlight--Image"
+                            src={Star_Suppliers}
+                        />
                         <ArrowRightOutlined className="Arrow--Icon" />
                     </div>
                     <div className="Spotlight--Item">
+                        <img
+                            className="Spotlight--Image"
+                            src={Leading_Supplier}
+                        />
                         <ArrowRightOutlined className="Arrow--Icon" />
                     </div>
                 </div>
             </div>
 
-            <div className="First--Body__Right--Container">
-                <div className="Right--Container__Title">
-                    <h2>You Make Like</h2>
+            <div className="Main--Content__Right--Container">
+                <div>
+                    <h2 className="Right--Container__Title">You Make Like</h2>
                 </div>
                 <div>
                     <div className="Right--Container__Items">
@@ -268,7 +298,7 @@ const MainContent = () => {
                             src={High_Quality_Hydraulic_Pump}
                             alt=""
                             width="80px"
-                            height="70px"
+                            height="50px"
                         />
                         <a class="Text--Item">
                             <div class="Type--Of__Products">
@@ -285,7 +315,7 @@ const MainContent = () => {
                             src={New_Style}
                             alt=""
                             width="80px"
-                            height="70px"
+                            height="50px"
                         />
                         <a class="Text--Item">
                             <div class="Type--Of__Products">Robot Arm</div>
@@ -311,7 +341,7 @@ const MainContent = () => {
                             src={Wholesale_Office_School}
                             alt=""
                             width="80px"
-                            height="70px"
+                            height="50px"
                         />
                         <a class="Text--Item">
                             <div class="Type--Of__Products">Faster</div>
@@ -326,7 +356,7 @@ const MainContent = () => {
                             src={Low_Price}
                             alt=""
                             width="80px"
-                            height="70px"
+                            height="50px"
                         />
                         <a class="Text--Item">
                             <div class="Type--Of__Products">Hydraulic Pump</div>

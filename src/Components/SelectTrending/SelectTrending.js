@@ -10,6 +10,7 @@ import Decoration_Construction1637904586000 from '../../Assets/Image/Decoration_
 import Agriculture_Food1637915608000 from '../../Assets/Image/Agriculture_Food1637915608000.jpg';
 import Metal_Crafts1637915631000 from '../../Assets/Image/Metal_Crafts1637915631000.jpg';
 import Bag1637904716000 from '../../Assets/Image/Bag1637904716000.jpg';
+import clsx from 'clsx';
 
 const SelectTrending = () => {
     return (
@@ -18,7 +19,7 @@ const SelectTrending = () => {
                 <h2>Selected Trending Products</h2>
             </div>
             <div className="Trend--Items">
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Plastic_Bottle1621474772000}
@@ -26,7 +27,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Rotary Pump</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Paper_Bag_Making_Machine1622020604000}
@@ -36,7 +37,7 @@ const SelectTrending = () => {
                         Construction machinery
                     </p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Rotary_Pump1637303466000}
@@ -44,7 +45,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">PVC Floor</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={PVC_Floor1636696239000}
@@ -54,7 +55,7 @@ const SelectTrending = () => {
                         Paper Bag Making Machine
                     </p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Bearing1628499506000}
@@ -62,7 +63,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Chainsaw And Parts</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Chainsaw_and_Parts1635487267000}
@@ -70,7 +71,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Plastic Bottles</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Construction_Machinery1628155847000}
@@ -78,7 +79,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Bearing</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Vehicle_Auto_Parts1637904433000}
@@ -88,7 +89,7 @@ const SelectTrending = () => {
                         Decoration & Construction
                     </p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Decoration_Construction1637904586000}
@@ -96,7 +97,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Lighting Decoration</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Agriculture_Food1637915608000}
@@ -104,7 +105,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Fastener</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Metal_Crafts1637915631000}
@@ -112,7 +113,7 @@ const SelectTrending = () => {
                     />
                     <p className="Trend--Product__Text">Fitness Equipment</p>
                 </div>
-                <div className="Trend--Product">
+                <div className={clsx('Trend--Product', 'BlackLink')}>
                     <img
                         className="Trend--Product__Image"
                         src={Bag1637904716000}
