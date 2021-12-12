@@ -1,7 +1,7 @@
 import easysourcing from '../../Assets/Image/easysourcing.jpg';
 import { RightOutlined } from '@ant-design/icons';
 import SourcingForm from './SourcingForm/SourcingForm';
-
+import GGButton from '../../ReuseableComponents/GGButton/GGButton';
 const Sourcing = () => {
     return (
         <div className="Sourcing">
@@ -23,10 +23,9 @@ const Sourcing = () => {
                     </p>
                     <br />
                     <br />
-                    <span>
-                        Learn More
-                        <RightOutlined />
-                    </span>
+
+                    <GGButton className="BlackLink" value="Learn More" />
+                    <RightOutlined />
                 </div>
                 <div className="Sourcing--Form">
                     <h2>Want to get quotations?</h2>

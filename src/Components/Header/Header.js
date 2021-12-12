@@ -1,6 +1,6 @@
 import made_in_iran from '../../Assets/Image/made_in_iran.png';
 import GGButton from '../../ReuseableComponents/GGButton/GGButton';
-import { Menu, Dropdown, Input } from 'antd';
+import { Menu, Dropdown, Input, Button } from 'antd';
 import 'antd/dist/antd.less';
 import {
     MobileOutlined,
@@ -58,21 +58,21 @@ const Header = () => {
         <div className="Header">
             <div className="Header--First__Row">
                 <Dropdown className="Header--Dropdown" overlay={menu}>
-                    <div>
+                    <div className="BlackLink">
                         <GGButton className="BlackLink" value="For Buyer" />
                         <DownOutlined />
                     </div>
                 </Dropdown>
 
                 <Dropdown className="Header--Dropdown" overlay={menu}>
-                    <div>
+                    <div className="BlackLink">
                         <GGButton className="BlackLink" value="For Supplier" />
                         <DownOutlined />
                     </div>
                 </Dropdown>
 
                 <Dropdown className="Header--Dropdown" overlay={menu}>
-                    <div>
+                    <div className="BlackLink">
                         <MobileOutlined />
                         <GGButton className="BlackLink" value="Get App" />
                         <DownOutlined />
@@ -80,7 +80,7 @@ const Header = () => {
                 </Dropdown>
 
                 <Dropdown className="Header--Dropdown" overlay={language}>
-                    <div>
+                    <div className="BlackLink">
                         <GGButton className="BlackLink" value="English" />
                         <DownOutlined />
                     </div>
@@ -97,6 +97,7 @@ const Header = () => {
                             className={clsx('Search--Tab__Item', 'BlackLink')}
                             value="Products"
                         />
+
                         <GGButton
                             className={clsx('Search--Tab__Item', 'BlackLink')}
                             value="Supplier"

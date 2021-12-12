@@ -5,31 +5,42 @@ const SourcingForm = () => {
     const [productDescription, setProductDescription] = useState('');
     const [purchaseQuantity, setPurchaseQuantity] = useState('');
 
+    const onSubmit = (event) => {
+        event.preventDefault();
+        console.log({
+            productName: productName,
+            productDescription: productDescription,
+            purchaseQuantity: purchaseQuantity,
+        });
+
+        setProductName('');
+        setProductDescription('');
+        setPurchaseQuantity('');
+    };
+
     const { TextArea } = Input;
     const { Option } = Select;
     return (
-        <form onSubmit={handleSubmit}>
+        <form>
             <Input
                 value={productName}
                 className="Form--Text"
                 placeholder="Product Name or Keywords"
-                onChange={(event) => setProductName(event.target.value)}
+                onChange={(e) => setProductName(e.target.value)}
             />
             <TextArea
                 value={productDescription}
                 className="Form--Textarea"
                 placeholder="Product Description"
                 autoSize={{ minRows: 3, maxRows: 5 }}
-                onChange={(event) => setProductDescription(event.target.value)}
+                onChange={(e) => setProductDescription(e.target.value)}
             />
             <div className="Form--Item">
                 <Input
                     value={purchaseQuantity}
                     className="Input--Quantity"
                     placeholder="Purchase Quantity"
-                    onChange={(event) =>
-                        setPurchaseQuantity(event.target.value)
-                    }
+                    onChange={(e) => setPurchaseQuantity(e.target.value)}
                 />
                 <Input.Group compact className="Form--Option__Sourcing">
                     <Select
@@ -61,7 +72,7 @@ const SourcingForm = () => {
                     </Select>
                 </Input.Group>
             </div>
-            <Button className="Form--Button" type="primary">
+            <Button className="Form--Button" onClick={onSubmit} type="primary">
                 Post Your Request Now
             </Button>
         </form>

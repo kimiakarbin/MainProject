@@ -37,10 +37,9 @@ const Solution = () => {
                             Industry Competitiveness <br />
                             Original Products{' '}
                         </p>
-                      
                     </div>
                     <div className="Solution--Prods">
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={Apparel_Textile}
                                 alt=""
@@ -51,7 +50,7 @@ const Solution = () => {
                                 Textile
                             </p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={Lights_Construction}
                                 alt=""
@@ -62,7 +61,7 @@ const Solution = () => {
                                 Constructions
                             </p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={Agriculture_Raw_Materials}
                                 alt=""
@@ -91,10 +90,9 @@ const Solution = () => {
                             Innovative Design <br />
                             Awarded by Industry Experts
                         </p>
-                     
                     </div>
                     <div className="Solution--Prods">
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={torch_flashlight}
                                 alt=""
@@ -104,11 +102,11 @@ const Solution = () => {
                                 Constructions <br /> & Decoration
                             </p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img src={umbrella} alt="" className="Prods--Pic" />
                             <p>Transportation</p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img src={mug} alt="" className="Prods--Pic" />
                             <p>
                                 Security & <br />
@@ -135,7 +133,7 @@ const Solution = () => {
                         </p>
                     </div>
                     <div className="Solution--Prods">
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={construction_decoration}
                                 alt=""
@@ -145,7 +143,7 @@ const Solution = () => {
                                 Constructions <br /> & Decoration
                             </p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={transportation}
                                 alt=""
@@ -153,7 +151,7 @@ const Solution = () => {
                             />
                             <p>Transportation</p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={security_protection}
                                 alt=""
@@ -183,10 +181,9 @@ const Solution = () => {
                             Recommended at World's Famous Trade <br />
                             Shows
                         </p>
-                      
                     </div>
                     <div className="Solution--Prods">
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={advance_1637732192000}
                                 alt=""
@@ -196,7 +193,7 @@ const Solution = () => {
                                 Constructions <br /> & Decoration
                             </p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={advance_1637732217000}
                                 alt=""
@@ -204,7 +201,7 @@ const Solution = () => {
                             />
                             <p>Transportation</p>
                         </div>
-                        <div className="Prods--Item">
+                        <div className="BlackLink">
                             <img
                                 src={advance_1637732257000}
                                 alt=""

@@ -21,6 +21,7 @@ import {
     ArrowRightOutlined,
 } from '@ant-design/icons';
 import GGButton from '../../ReuseableComponents/GGButton/GGButton';
+import clsx from 'clsx';
 
 const MainContent = () => {
     const menu = (
@@ -58,7 +59,12 @@ const MainContent = () => {
     return (
         <div className="Main--Content">
             <div className="Main--Content__Left--Container">
-                <div className="Main--Content__Left--Container__Title">
+                <div
+                    className={clsx(
+                        'Main--Content__Left--Container__Title',
+                        'BlackLink',
+                    )}
+                >
                     <MenuOutlined />
                     <GGButton className="BlackLink" value="Categories" />
                 </div>
