@@ -21,7 +21,7 @@ const SourcingForm = () => {
     const { TextArea } = Input;
     const { Option } = Select;
     return (
-        <form>
+        <div>
             <Input
                 value={productName}
                 className="Form--Text"
@@ -75,7 +75,7 @@ const SourcingForm = () => {
             <Button className="Form--Button" onClick={onSubmit} type="primary">
                 Post Your Request Now
             </Button>
-        </form>
+        </div>
     );
 };
 

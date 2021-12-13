@@ -7,7 +7,6 @@ import GGButton from '../../ReuseableComponents/GGButton/GGButton';
 import clsx from 'clsx';
 
 const TradeShow = () => {
-    const { Step } = Steps;
     return (
         <div className="Trade--Show">
             <div className="Trade--Header">
@@ -32,37 +31,106 @@ const TradeShow = () => {
                         className="Trade--Body__Image"
                         src={International_Electricity_Lighting_Expo2021}
                     />
-                    {/* <Steps className="Trade--Body__Steps" direction="vertical">
-                    <Step> dfndmn</Step>
-                    <Step title="" description="This is a description."></Step>
-                    <Step title="Step 3" description="This is a description." />
-                </Steps> */}
-                </div>
-                <div className="Trade--Items">
-                    <div className="Trade--Item">
-                        <img src={Automechanika_Dubai_2021} />
-
-                        <div className="Trade--Item__Description">
-                            <GGButton
-                                value="Automechanika Dubai 2021"
-                                className="BlackLink"
-                            />
-                            <p>Duration: Dec 14 - 16, 2021</p>
-                            <p>Location: Dubai, United Arab Emirates</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src={Sourcing_and_Supply_Chain_Forum} />
+                    <div className="Trade--Item__Main--Image__Description">
                         <GGButton
-                            value="2021 Sourcing and Supply Chain Forum"
-                            className="BlackLink"
+                            className="Trade--Item__Main--Image__Title"
+                            value="Arab Health 2022"
                         />
-                        <h3></h3> <h3></h3>
+                        <p
+                            className={clsx(
+                                'Trade--Item__text',
+                                'Trade--Item__Main--Image__Text',
+                            )}
+                        >
+                            Duration: jan 24-27 , 2022
+                        </p>
+                        <p
+                            className={clsx(
+                                'Trade--Item__text',
+                                'Trade--Item__Main--Image__Text',
+                            )}
+                        >
+                            Location: United Arab Emirates
+                        </p>
                     </div>
+                </div>
+
+                <div className="Trade--Items">
+                    <div className="Line"></div>
                     <div>
-                        <img src={MECTECH_2021} />
-                        <GGButton value="MECTECH 2021" className="BlackLink" />
-                        <h3></h3> <h3></h3>
+                        <div className="Trade--Item__Container">
+                            <div className="circle"></div>
+                            <div className="Trade--Item">
+                                <img
+                                    className="Trade--Item__Pic"
+                                    src={Automechanika_Dubai_2021}
+                                />
+
+                                <div className="Trade--Item__Description">
+                                    <GGButton
+                                        value="Automechanika Dubai 2021"
+                                        className={clsx(
+                                            'BlackLink',
+                                            'Trade--Item__Title',
+                                        )}
+                                    />
+                                    <p className="Trade--Item__text">
+                                        Duration: Dec 14 - 16, 2021
+                                    </p>
+                                    <p className="Trade--Item__text">
+                                        Location: Dubai, United Arab Emirates
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Trade--Item__Container">
+                            <div className="circle"></div>
+                            <div className="Trade--Item">
+                                <img
+                                    className="Trade--Item__Pic"
+                                    src={Sourcing_and_Supply_Chain_Forum}
+                                />
+                                <div className="Trade--Item__Description">
+                                    <GGButton
+                                        value="2021 Sourcing and Supply Chain Forum"
+                                        className={clsx(
+                                            'BlackLink',
+                                            'Trade--Item__Title',
+                                        )}
+                                    />
+                                    <p className="Trade--Item__text">
+                                        Duration: Dec 10 - 12, 2021
+                                    </p>
+                                    <p className="Trade--Item__text">
+                                        Location: Shanghai, China
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Trade--Item__Container">
+                            <div className="circle"></div>
+                            <div className="Trade--Item">
+                                <img
+                                    className="Trade--Item__Pic"
+                                    src={MECTECH_2021}
+                                />
+                                <div className="Trade--Item__Description">
+                                    <GGButton
+                                        value="MECTECH 2021"
+                                        className={clsx(
+                                            'BlackLink',
+                                            'Trade--Item__Title',
+                                        )}
+                                    />
+                                    <p className="Trade--Item__text">
+                                        Duration: Dec 9 - 12, 2021
+                                    </p>
+                                    <p className="Trade--Item__text">
+                                        Location: Egypt
+                                    </p>
+                                </div>
+                            </div>{' '}
+                        </div>
                     </div>
                 </div>
             </div>

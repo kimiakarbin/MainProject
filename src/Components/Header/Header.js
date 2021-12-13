@@ -1,4 +1,4 @@
-import made_in_iran from '../../Assets/Image/made_in_iran.png';
+import made_in_iran from '../../Assets/Image/made_in_iran.webp';
 import GGButton from '../../ReuseableComponents/GGButton/GGButton';
 import { Menu, Dropdown, Input, Button } from 'antd';
 import 'antd/dist/antd.less';
@@ -9,8 +9,9 @@ import {
     ShoppingCartOutlined,
 } from '@ant-design/icons';
 import clsx from 'clsx';
+import HamburgerMenu from './hamburgerMenue';
 
-const Header = () => {
+const Header = ({ open }) => {
     const menu = (
         <Menu>
             <Menu.Item>
@@ -56,7 +57,8 @@ const Header = () => {
 
     return (
         <div className="Header">
-            <div className="Header--First__Row">
+            <HamburgerMenu />
+            <div className="Header--First__Row" open={open}>
                 <Dropdown className="Header--Dropdown" overlay={menu}>
                     <div className="BlackLink">
                         <GGButton className="BlackLink" value="For Buyer" />

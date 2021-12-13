@@ -1,4 +1,4 @@
-import easysourcing from '../../Assets/Image/easysourcing.jpg';
+import easysourcing from '../../Assets/Image/easysourcing.webp';
 import { RightOutlined } from '@ant-design/icons';
 import SourcingForm from './SourcingForm/SourcingForm';
 import GGButton from '../../ReuseableComponents/GGButton/GGButton';

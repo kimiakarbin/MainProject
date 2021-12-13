@@ -1,3 +1,5 @@
+import GGButton from '../../ReuseableComponents/GGButton/GGButton';
+import clsx from 'clsx';
 import {
     AppleOutlined,
     AndroidOutlined,
@@ -15,48 +17,148 @@ const Footer = () => {
             <div className="Footer--Links">
                 <div>
                     <div className="Footer--Links__Groups">
-                        <h3>Discover Products & Suppliers</h3>
-                        <h4>Industry Sites</h4>
-                        <h4>Regional Channels</h4>
-                        <h4>Special Channel</h4>
-                        <h4>Custom Products</h4>
-                        <h4>Video Show</h4>
-                        <h4>Online Trading</h4>
+                        <p>Discover Products & Suppliers</p>
+                        <GGButton
+                            value="Industry Sites"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+                        <GGButton
+                            value="Regional Channels"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+                        <GGButton
+                            value="Special Channel"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Custom Products"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Video Show"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Online Trading"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
                     </div>
                     <div className="Footer--Links__Groups">
-                        <h3>Featured Service</h3>
-                        <h4>Star Buyer</h4>
-                        <h4>Trade Resources</h4>
-                        <h4>Logistics Partners</h4>
+                        <p>Featured Service</p>
+                        <GGButton
+                            value="Star Buyer"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Trade Resources"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Logistics Partners"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
                     </div>
                 </div>
                 <div>
                     <div className="Footer--Links__Groups">
-                        <h3>About Us</h3>
-                        <h4>About Made-in-China.com</h4>
-                        <h4>Site Map</h4>
-                        <h4>Trademark</h4>
-                        <h4>Friendly Links</h4>
+                        <p>About Us</p>
+                        <GGButton
+                            value="About Made-in-China.com"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Site Map"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Trademark"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Friendly Links"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
                     </div>
                     <div className="Footer--Links__Groups">
-                        <h3>Help</h3> <h4>FAQ</h4>
-                        <h4>Contact Us</h4>
-                        <h4>加入高级会员</h4>
-                        <h4>Submit a Complaint</h4>
+                        <p>Help</p>
+                        <GGButton
+                            value="FAQ"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+                        <GGButton
+                            value="Contact Us"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="加入高级会员"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
+
+                        <GGButton
+                            value="Submit a Complaint"
+                            className={clsx('ssd', 'GrayLink')}
+                        />
                     </div>
                 </div>
                 <div className="Footer--Links__Groups">
-                    <h3>Language Options</h3>
-                    <h4>Español</h4>
-                    <h4>Português</h4>
-                    <h4>Français</h4>
-                    <h4>Русский язык</h4>
-                    <h4>Italiano</h4>
-                    <h4>Deutsch</h4>
-                    <h4>Nederlands</h4>
-                    <h4>العربية</h4>
-                    <h4>한국어</h4>
-                    <h4>日本語</h4>
+                    <p>Language Options</p>
+                    <GGButton
+                        value="Español"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+                    <GGButton
+                        value="Português"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="Français"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="Русский язык"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="Italiano"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="Deutsch"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="Nederlands"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="العربية"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="한국어"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
+
+                    <GGButton
+                        value="日本語"
+                        className={clsx('ssd', 'GrayLink')}
+                    />
                 </div>
                 <div className="Footer--Links__col">
                     <div className="Product--Alert"></div>
@@ -86,11 +188,11 @@ const Footer = () => {
                 <div className="Footer--Social">
                     Follow Us :
                     <div className="Footer--Social__Icon">
-                        <FacebookOutlined />
-                        <TwitterOutlined />
-                        <InstagramOutlined />
-                        <YoutubeOutlined />
-                        <LinkedinOutlined />
+                        <FacebookOutlined className="Facebook--Icon" />
+                        <TwitterOutlined className="Twitter--Icon" />
+                        <InstagramOutlined className="Instagram--Icon" />
+                        <YoutubeOutlined className="Youtube--Icon" />
+                        <LinkedinOutlined className="Linkedin--Icon" />
                     </div>
                 </div>
             </div>

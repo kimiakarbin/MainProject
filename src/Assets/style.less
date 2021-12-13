@@ -404,6 +404,136 @@
 .Prods--Pic:hover {
     filter: saturate(0.1);
 }
+.Trade--Show {
+    background-color: white;
+    margin: 70px;
+    height: 555px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 17px;
+    margin-bottom: 35px;
+}
+.Trade--Header {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 493px;
+}
+.Trade--Header__Title {
+    margin-top: 15px;
+}
+.Trade--Title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.Trade--More__Button {
+    margin-left: 260px;
+    margin-top: 25px;
+}
+.Trade--Body {
+    display: flex;
+}
+.Trade--Main__Pic {
+    display: flex;
+    margin: 20px;
+}
+.Trade--Body__Image {
+    margin: 3px;
+    width: 750px;
+    height: 397px;
+    cursor: pointer;
+}
+
+.Trade--Item__Main--Image__Description {
+    position: absolute;
+    margin-top: 321px;
+    margin-left: 15px;
+
+    text-align: left;
+    cursor: pointer;
+}
+.Trade--Item__Main--Image__Title {
+    font-size: 18px;
+    color: #fff !important;
+}
+.Trade--Item__text {
+    margin-bottom: 0px;
+    color: #888;
+}
+.Trade--Item__Main--Image__Text {
+    color: #fff !important;
+}
+.Trade--Items {
+    display: flex;
+    text-align: left;
+    margin: 20px;
+}
+.Line {
+    border-left: 2px solid #e6e6e6;
+    height: 398px;
+}
+.Trade--Item__Container {
+    display: flex;
+}
+.Trade--Item__Container:hover {
+    .circle {
+        background-color: #177ee6;
+    }
+}
+
+.circle {
+    border: 2px solid #06c;
+    border-radius: 100px;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    margin-left: -10px;
+    background-color: white;
+}
+.Trade--Item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Trade--Item__Pic {
+    cursor: pointer;
+}
+
+.Trade--Item__Description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.Trade--Item__Title {
+    margin-bottom: 9px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Hot--Items {
+    margin: 70px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+.Hot--Items__Title {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.Hot--Items__List {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.Hot--Item {
+    color: #888 !important ;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+
 .H1 {
     display: flex;
     justify-content: space-between;
@@ -429,7 +559,6 @@
     position: fixed;
     top: 50%;
     margin-left: 96%;
-    z-index: 3;
     height: 272px;
     width: 50px;
     font-size: 27px;
@@ -437,8 +566,6 @@
 .Pull--Request__Icon {
     border: solid #73ace6;
     border-radius: 8px;
-    margin-top: 4px;
-    width: 30px;
     height: 50px;
     padding-top: 9px;
     background-color: #73ace6;
@@ -500,93 +627,31 @@
 //     margin-bottom: 76px;
 // }
 
-.Trade--Show {
-    background-color: white;
-    margin: 70px;
-    height: 533px;
-    margin-top: 40px;
-    text-align: center;
-    padding-top: 17px;
-}
-.Trade--Header {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 493px;
-}
-.Trade--Header__Title {
-    margin-top: 15px;
-}
-.Trade--Title {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
-}
-
-.Trade--Body {
-    display: flex;
-    justify-content: space-around;
-}
-.Trade--Body__Steps {
-    margin-left: 50%;
-    height: 371px;
-    margin-top: 17px;
-}
-.Trade--Main__Pic {
-    display: flex;
-}
-.Trade--Body__Image {
-    margin: 14px;
-    width: 649px;
-    height: 377px;
-    margin-left: -197px;
-    cursor: pointer;
-}
-.Trade--Items {
-    margin-left: -391px;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-.Trade--Item {
-    display: flex;
-}
-.Trade--Item__Description {
-    display: flex;
-    flex-direction: column;
-}
-.Trade--More__Button {
-    margin-left: 260px;
-    margin-top: 25px;
-}
-.Hot--Items__List {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 40px;
-}
-.Hot--Item {
-    color: #888;
-    font-size: 12px;
-}
-.Hot--Item:hover {
-    color: #f44336;
-}
-.Hot--Items__Title {
-    margin-left: 30px;
-}
 .Footer {
+    padding-top: 35px;
+    padding: 70px;
+    border-top: 1px solid #dae0e6;
     background: #e3e4e6;
     height: 650px;
 }
 .Footer--Links {
     display: flex;
     justify-content: space-between;
-    padding: 32px;
 }
-.Footer--Links__Groups h4 {
-    color: #555;
+.ssd {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
 }
-.Footer--Links__Groups h4:hover {
-    color: #f44336;
+.Footer--Links__Groups p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #222;
+    font-weight: 500;
+}
+.Footer--Links__Groups {
+    margin-bottom: 10px;
+    line-height: 25px;
 }
 .Footer--Links__Items {
     height: 56px;
@@ -619,6 +684,7 @@
 .Soft--Social__Icon {
     color: #1470cc;
     font-size: 20px;
+    cursor: pointer;
 }
 .Footer--App {
     display: flex;
@@ -626,24 +692,31 @@
     margin: 4px;
 }
 .App--Store__Link {
+    cursor: pointer;
     background: #4d4d4d;
     color: white;
     padding: 4px;
     margin: 3px;
     border-radius: 2px;
+    width: 100px;
 }
 .Google--Play__Link {
+    cursor: pointer;
     background: #690;
     color: white;
     padding: 4px;
     margin: 3px;
     border-radius: 2px;
+    width: 105px;
 }
 .Footer--App__Title {
     margin: 7px;
 }
 .Footer--Social__Icon {
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
 }
 .Footer--Social {
     display: flex;
@@ -667,4 +740,35 @@
     justify-content: center;
     align-items: baseline;
     padding-top: 10px;
+}
+.Facebook--Icon:hover {
+    cursor: pointer;
+    color: #3255a6;
+}
+.Twitter--Icon:hover {
+    cursor: pointer;
+    color: #1da1f3;
+}
+.Instagram--Icon:hover {
+    cursor: pointer;
+    color: #e5398f;
+}
+.Youtube--Icon:hover {
+    cursor: pointer;
+    color: #e63917;
+}
+.Linkedin--Icon:hover {
+    cursor: pointer;
+    color: #1470cc;
+}
+@media (max-width: 991px) {
+    .Header--First__Row {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 224px;
+        justify-content: space-around;
+        background-color: wheat;
+        width: 179px;
+    }
 }
