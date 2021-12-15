@@ -1,4 +1,5 @@
 import Arts_Crafts from '../../Assets/Image/Arts_Crafts.webp';
+import Arts__Crafts from '../../Assets/Image/Arts__Crafts.webp';
 import Wig from '../../Assets/Image/Wig.webp';
 import Sunglasses from '../../Assets/Image/Sunglasses.webp';
 import Medal from '../../Assets/Image/Medal.webp';
@@ -18,6 +19,12 @@ const IndustryBooth = () => {
                     className="Industry--Image__Background"
                     src={Arts_Crafts}
                     alt=""
+                />
+                <img
+                    className="Industry--Image__Backgroundd"
+                    src={Arts__Crafts}
+                    alt=""
+                    style={{ display: 'none' }}
                 />
                 <h2>Arts & Crafts</h2>
                 <Button className="Source--Now__Button" type="primary">

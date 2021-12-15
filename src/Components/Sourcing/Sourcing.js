@@ -9,7 +9,7 @@ const Sourcing = () => {
                 <img className="Sourcing--Theme" src={easysourcing} alt="" />
             </div>
             <div className="Sourcing--Text">
-                <div>
+                <div className="Sourcing--Text__Section">
                     <h1>EASY SOURCING</h1>
                     <p>
                         An easy way to post your sourcing requests and get
