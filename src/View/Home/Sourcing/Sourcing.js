@@ -1,7 +1,8 @@
-import easysourcing from '../../Assets/Image/easysourcing.webp';
+import easysourcing from './Assets/Image/easysourcing.webp';
 import { RightOutlined } from '@ant-design/icons';
 import SourcingForm from './SourcingForm/SourcingForm';
-import GGButton from '../../ReuseableComponents/GGButton/GGButton';
+import GGButton from '../../../ReuseableComponents/GGButton/GGButton';
+import './Assets/Style.less';
 const Sourcing = () => {
     return (
         <div className="Sourcing">

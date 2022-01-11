@@ -1,5 +1,6 @@
 import { Input, Select, Button } from 'antd';
 import { useState } from 'react';
+import '../Assets/Style.less';
 const SourcingForm = () => {
     const [productName, setProductName] = useState('');
     const [productDescription, setProductDescription] = useState('');

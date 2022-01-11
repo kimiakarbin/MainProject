@@ -1,15 +1,16 @@
-import Arts_Crafts from '../../Assets/Image/Arts_Crafts.webp';
-import Arts__Crafts from '../../Assets/Image/Arts__Crafts.webp';
-import Wig from '../../Assets/Image/Wig.webp';
-import Sunglasses from '../../Assets/Image/Sunglasses.webp';
-import Medal from '../../Assets/Image/Medal.webp';
-import Human_Hair from '../../Assets/Image/Human_Hair.webp';
-import Door from '../../Assets/Image/Door.webp';
-import Decoration_Materials from '../../Assets/Image/Decoration_Materials.webp';
-import China_Building from '../../Assets/Image/China_Building.webp';
-import Aluminum_Window from '../../Assets/Image/Aluminum_Window.webp';
+import Arts_Crafts from './Assets/Image/Arts_Crafts.webp';
+import Arts__Crafts from './Assets/Image/Arts__Crafts.webp';
+import Wig from './Assets/Image/Wig.webp';
+import Sunglasses from './Assets/Image/Sunglasses.webp';
+import Medal from './Assets/Image/Medal.webp';
+import Human_Hair from './Assets/Image/Human_Hair.webp';
+import Door from './Assets/Image/Door.webp';
+import Decoration_Materials from './Assets/Image/Decoration_Materials.webp';
+import China_Building from './Assets/Image/China_Building.webp';
+import Aluminum_Window from './Assets/Image/Aluminum_Window.webp';
 import { Button } from 'antd';
 import clsx from 'clsx';
+import './Assets/Style.less';
 
 const IndustryBooth = () => {
     return (

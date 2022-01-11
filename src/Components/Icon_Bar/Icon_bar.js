@@ -11,8 +11,8 @@ const Icon_Bar = () => {
         <div className="Icon_Bar">
             <PullRequestOutlined className="Pull--Request__Icon" />
             <WechatOutlined className="Pull--Request__Icon" />
-            <DownloadOutlined className="Download--Icon" />
-            <BackTop className="Arrow--BackUp__Icon">
+            <DownloadOutlined className="Pull--Request__Icon" />
+            <BackTop className="Pull--Request__Icon">
                 <UpOutlined />
             </BackTop>
         </div>

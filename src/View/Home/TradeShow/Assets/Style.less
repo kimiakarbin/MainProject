@@ -1,0 +1,206 @@
+@import '../../../../Assets/style.less';
+.Trade--Show {
+    background-color: white;
+    margin: 70px;
+    height: 555px;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 17px;
+    margin-bottom: 35px;
+}
+.Trade--Header {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 493px;
+}
+.Trade--Header__Title {
+    margin-top: 15px;
+}
+.Trade--Title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.Trade--More__Button {
+    margin-left: 260px;
+    margin-top: 25px;
+}
+.Trade--Body {
+    display: flex;
+}
+.Trade--Main__Pic {
+    display: flex;
+    margin: 20px;
+}
+.Trade--Body__Image {
+    margin: 3px;
+    width: 750px;
+    height: 397px;
+    cursor: pointer;
+}
+
+.Trade--Item__Main--Image__Description {
+    position: absolute;
+    margin-top: 321px;
+    margin-left: 15px;
+
+    text-align: left;
+    cursor: pointer;
+}
+.Trade--Item__Main--Image__Title {
+    font-size: 18px;
+    color: #fff !important;
+}
+.Trade--Item__text {
+    margin-bottom: 0px;
+    color: #888;
+}
+.Trade--Item__Main--Image__Text {
+    color: #fff !important;
+}
+.Trade--Items {
+    display: flex;
+    text-align: left;
+    margin: 20px;
+}
+.Line {
+    border-left: 2px solid #e6e6e6;
+    height: 398px;
+}
+.Trade--Item__Container {
+    display: flex;
+}
+.Trade--Item__Container:hover {
+    .circle {
+        background-color: #177ee6;
+    }
+}
+
+.circle {
+    border: 2px solid #06c;
+    border-radius: 100px;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    margin-left: -10px;
+    background-color: white;
+}
+.Trade--Item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Trade--Item__Pic {
+    cursor: pointer;
+}
+
+.Trade--Item__Description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.Trade--Item__Title {
+    margin-bottom: 9px;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 567px) {
+    .Trade--Header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .Trade--Title {
+        margin-left: -18%;
+        display: inline-flex;
+        width: 373px;
+    }
+    .Trade--Header__Title {
+        margin-left: -92px;
+    }
+    .Trade--Header__Title p {
+        margin-left: -22% !important;
+        width: 380px !important;
+    }
+    .Trade--More__Button {
+        margin-left: -22% !important;
+        margin-right: 12%;
+        margin-top: 0;
+    }
+    .Trade--Body {
+        display: flex;
+        flex-direction: column;
+    }
+    .Trade--Show {
+        margin: 1.5%;
+        height: auto;
+    }
+
+    .Trade--Body__Image {
+        width: 96% !important;
+        height: 100%;
+        margin-left: -38px !important;
+    }
+    .Line {
+        height: auto;
+    }
+    .Trade--Item__Main--Image__Description {
+        margin-top: 310px !important;
+    }
+}
+@media (max-width: 991px) {
+    .Trade--Show {
+        margin: 1.5%;
+        height: auto;
+    }
+    .Trade--Title {
+        color: black;
+        display: flex;
+        justify-content: center !important;
+        width: 77%;
+        margin-left: -8% !important;
+    }
+    .Trade--Header__Title {
+        margin-left: auto;
+    }
+    .Trade--Header__Title p {
+        width: 671px;
+        display: flex;
+        justify-content: center;
+        margin-left: -22% !important;
+    }
+    .Trade--More__Button {
+        margin-left: -21%;
+        margin-right: 12%;
+        margin-top: 0;
+    }
+    .Trade--Body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Trade--Body__Image {
+        width: 90%;
+        height: 397px;
+        cursor: pointer;
+    }
+    .Trade--Main__Pic {
+        display: flex;
+        margin: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .Trade--Item__Main--Image__Description {
+        margin-left: -60%;
+    }
+    .Trade--Items {
+        margin: 8%;
+        margin-top: 4%;
+    }
+    .Trade--Header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 26%;
+    }
+}

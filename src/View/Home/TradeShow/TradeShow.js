@@ -1,10 +1,11 @@
-import { Steps, Button } from 'antd';
-import Sourcing_and_Supply_Chain_Forum from '../../Assets/Image/Sourcing_and_Supply_Chain_Forum.webp';
-import Automechanika_Dubai_2021 from '../../Assets/Image/Automechanika_Dubai_2021.webp';
-import MECTECH_2021 from '../../Assets/Image/MECTECH_2021.webp';
-import International_Electricity_Lighting_Expo2021 from '../../Assets/Image/International_Electricity_Lighting_Expo2021.webp';
-import GGButton from '../../ReuseableComponents/GGButton/GGButton';
+import { Button } from 'antd';
+import Sourcing_and_Supply_Chain_Forum from './Assets/Image/Sourcing_and_Supply_Chain_Forum.webp';
+import Automechanika_Dubai_2021 from './Assets/Image/Automechanika_Dubai_2021.webp';
+import MECTECH_2021 from './Assets/Image/MECTECH_2021.webp';
+import International_Electricity_Lighting_Expo2021 from './Assets/Image/International_Electricity_Lighting_Expo2021.webp';
+import GGButton from '../../../ReuseableComponents/GGButton/GGButton';
 import clsx from 'clsx';
+import './Assets/Style.less';
 
 const TradeShow = () => {
     return (

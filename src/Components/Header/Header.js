@@ -1,6 +1,6 @@
 import made_in_iran from '../../Assets/Image/made_in_iran.webp';
 import GGButton from '../../ReuseableComponents/GGButton/GGButton';
-import { Menu, Dropdown, Input, Button } from 'antd';
+import { Menu, Dropdown, Input } from 'antd';
 import 'antd/dist/antd.less';
 import {
     MobileOutlined,
@@ -12,7 +12,7 @@ import clsx from 'clsx';
 import HamburgerMenu from './hamburgerMenu';
 import { useMediaQuery } from 'react-responsive';
 import { DeviceSize } from '../Responsive/Responsive';
-
+import './Assets/Style.less';
 const Header = () => {
     const isMobile = useMediaQuery({ maxWidth: DeviceSize.tablet });
 

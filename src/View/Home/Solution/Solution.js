@@ -1,21 +1,20 @@
-import solutions_pic1 from '../../Assets/Image/solutions_pic1.webp';
-import solutions_pic2 from '../../Assets/Image/solutions_pic2.webp';
-import solutions_pic3 from '../../Assets/Image/solutions_pic3.webp';
-import solutions_pic4 from '../../Assets/Image/solutions_pic4.webp';
-import Apparel_Textile from '../../Assets/Image/Apparel_Textile.webp';
-import Lights_Construction from '../../Assets/Image/Lights_Construction.webp';
-import Agriculture_Raw_Materials from '../../Assets/Image/Agriculture_Raw_Materials.webp';
-import construction_decoration from '../../Assets/Image/construction_decoration.webp';
-import transportation from '../../Assets/Image/transportation.webp';
-import security_protection from '../../Assets/Image/security_protection.webp';
-import torch_flashlight from '../../Assets/Image/torch_flashlight.webp';
-import umbrella from '../../Assets/Image/umbrella.webp';
-import mug from '../../Assets/Image/mug.webp';
-import advance_1637732192000 from '../../Assets/Image/advance_1637732192000.webp';
-import advance_1637732217000 from '../../Assets/Image/advance_1637732217000.webp';
-import advance_1637732257000 from '../../Assets/Image/advance_1637732257000.webp';
-import 'antd/dist/antd.css';
-
+import solutions_pic1 from './Assets/Image/solutions_pic1.webp';
+import solutions_pic2 from './Assets/Image/solutions_pic2.webp';
+import solutions_pic3 from './Assets/Image/solutions_pic3.webp';
+import solutions_pic4 from './Assets/Image/solutions_pic4.webp';
+import Apparel_Textile from './Assets/Image/Apparel_Textile.webp';
+import Lights_Construction from './Assets/Image/Lights_Construction.webp';
+import Agriculture_Raw_Materials from './Assets/Image/Agriculture_Raw_Materials.webp';
+import construction_decoration from './Assets/Image/construction_decoration.webp';
+import transportation from './Assets/Image/transportation.webp';
+import security_protection from './Assets/Image/security_protection.webp';
+import torch_flashlight from './Assets/Image/torch_flashlight.webp';
+import umbrella from './Assets/Image/umbrella.webp';
+import mug from './Assets/Image/mug.webp';
+import advance_1637732192000 from './Assets/Image/advance_1637732192000.webp';
+import advance_1637732217000 from './Assets/Image/advance_1637732217000.webp';
+import advance_1637732257000 from './Assets/Image/advance_1637732257000.webp';
+import './Assets/Style.less';
 const Solution = () => {
     return (
         <div className="Solutions">
@@ -178,10 +177,12 @@ const Solution = () => {
                         <p>
                             Reliable China Supplier
                             <br />
-                            Recommended at World's Famous Trade <br />
-                            Shows
+                            Recommended at World's
+                            <br />
+                            Famous Trade Shows
                         </p>
                     </div>
+
                     <div className="Solution--Prods">
                         <div className="BlackLink">
                             <img

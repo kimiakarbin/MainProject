@@ -1,26 +1,27 @@
-import banner990X400 from '../../Assets/Image/banner990X400.webp';
-import banner990X4001 from '../../Assets/Image/banner990X4001.webp';
-import banner990X4003 from '../../Assets/Image/banner990X4003.webp';
-import banner990X4002 from '../../Assets/Image/banner990X4002.webp';
-import High_Quality_Hydraulic_Pump from '../../Assets/Image/High_Quality_Hydraulic_Pump.webp';
-import Hot_Sale from '../../Assets/Image/Hot_Sale.webp';
-import New_Style from '../../Assets/Image/New_Style.webp';
-import smart_expo from '../../Assets/Image/smart_expo.webp';
-import Online_Trading from '../../Assets/Image/Online_Trading.webp';
-import Star_Suppliers from '../../Assets/Image/Star_Suppliers.webp';
-import Leading_Supplier from '../../Assets/Image/Leading_Supplier.webp';
-import Wholesale_Office_School from '../../Assets/Image/Wholesale_Office_School.webp';
-import Low_Price from '../../Assets/Image/Low_Price.webp';
-import 'antd/dist/antd.css';
-import '../../Assets/style.less';
+import banner990X400 from './Assets/Image/banner990X400.webp';
+import banner990X4001 from './Assets/Image/banner990X4001.webp';
+import banner990X4003 from './Assets/Image/banner990X4003.webp';
+import banner990X4002 from './Assets/Image/banner990X4002.webp';
+import High_Quality_Hydraulic_Pump from './Assets/Image/High_Quality_Hydraulic_Pump.webp';
+import Hot_Sale from './Assets/Image/Hot_Sale.webp';
+import New_Style from './Assets/Image/New_Style.webp';
+import smart_expo from './Assets/Image/smart_expo.webp';
+import Online_Trading from './Assets/Image/Online_Trading.webp';
+import Star_Suppliers from './Assets/Image/Star_Suppliers.webp';
+import Leading_Supplier from './Assets/Image/Leading_Supplier.webp';
+import Wholesale_Office_School from './Assets/Image/Wholesale_Office_School.webp';
+import Low_Price from './Assets/Image/Low_Price.webp';
+import 'antd/dist/antd.less';
+import '../MainContent/Assets/Style.less';
 import { Menu, Dropdown, Button, Carousel } from 'antd';
 import {
     MenuOutlined,
     RightOutlined,
     ArrowRightOutlined,
 } from '@ant-design/icons';
-import GGButton from '../../ReuseableComponents/GGButton/GGButton';
+import GGButton from '../../../ReuseableComponents/GGButton/GGButton';
 import clsx from 'clsx';
+import './Assets/Style.less';
 
 const MainContent = () => {
     const menu = (

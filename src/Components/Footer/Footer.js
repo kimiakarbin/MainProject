@@ -10,10 +10,13 @@ import {
     YoutubeOutlined,
     LinkedinOutlined,
 } from '@ant-design/icons';
+import './Assets/Style.less';
+import FooterResponsive from './FooterResponsive';
 
 const Footer = () => {
     return (
         <div className="Footer">
+            <FooterResponsive />
             <div className="Footer--Links">
                 <div>
                     <div className="Footer--Links__Groups">

@@ -1,17 +1,17 @@
-import Rotary_Pump1637303466000 from '../../Assets/Image/Rotary_Pump1637303466000.webp';
-import Paper_Bag_Making_Machine1622020604000 from '../../Assets/Image/Paper_Bag_Making_Machine1622020604000.webp';
-import Plastic_Bottle1621474772000 from '../../Assets/Image/Plastic_Bottle1621474772000.webp';
-import PVC_Floor1636696239000 from '../../Assets/Image/PVC_Floor1636696239000.webp';
-import Bearing1628499506000 from '../../Assets/Image/Bearing1628499506000.webp';
-import Chainsaw_and_Parts1635487267000 from '../../Assets/Image/Chainsaw_and_Parts1635487267000.webp';
-import Construction_Machinery1628155847000 from '../../Assets/Image/Construction_Machinery1628155847000.webp';
-import Vehicle_Auto_Parts1637904433000 from '../../Assets/Image/Vehicle_Auto_Parts1637904433000.webp';
-import Decoration_Construction1637904586000 from '../../Assets/Image/Decoration_Construction1637904586000.webp';
-import Agriculture_Food1637915608000 from '../../Assets/Image/Agriculture_Food1637915608000.webp';
-import Metal_Crafts1637915631000 from '../../Assets/Image/Metal_Crafts1637915631000.webp';
-import Bag1637904716000 from '../../Assets/Image/Bag1637904716000.webp';
+import Rotary_Pump1637303466000 from './Assets/Image/Rotary_Pump1637303466000.webp';
+import Paper_Bag_Making_Machine1622020604000 from './Assets/Image/Paper_Bag_Making_Machine1622020604000.webp';
+import Plastic_Bottle1621474772000 from './Assets/Image/Plastic_Bottle1621474772000.webp';
+import PVC_Floor1636696239000 from './Assets/Image/PVC_Floor1636696239000.webp';
+import Bearing1628499506000 from './Assets/Image/Bearing1628499506000.webp';
+import Chainsaw_and_Parts1635487267000 from './Assets/Image/Chainsaw_and_Parts1635487267000.webp';
+import Construction_Machinery1628155847000 from './Assets/Image/Construction_Machinery1628155847000.webp';
+import Vehicle_Auto_Parts1637904433000 from './Assets/Image/Vehicle_Auto_Parts1637904433000.webp';
+import Decoration_Construction1637904586000 from './Assets/Image/Decoration_Construction1637904586000.webp';
+import Agriculture_Food1637915608000 from './Assets/Image/Agriculture_Food1637915608000.webp';
+import Metal_Crafts1637915631000 from './Assets/Image/Metal_Crafts1637915631000.webp';
+import Bag1637904716000 from './Assets/Image/Bag1637904716000.webp';
 import clsx from 'clsx';
-
+import './Assets/Style.less';
 const SelectTrending = () => {
     return (
         <div className="Select--Trending">

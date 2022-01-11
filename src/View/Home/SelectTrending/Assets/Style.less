@@ -1,0 +1,49 @@
+@import '../../../../Assets/style.less';
+.Select--Trending {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 70px;
+}
+.Trending--Title {
+    text-align: left;
+    display: flex;
+    margin: 29px;
+}
+.Trend--Items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Trend--Product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 238px;
+}
+.Trend--Product__Image {
+    height: 190px;
+    width: 90%;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    transform: scale(1, 1);
+}
+.Trend--Product__Image:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.Trend--Product__Text {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+@media (max-width: 991px) {
+    .Select--Trending {
+        margin: 1.5%;
+    }
+    .Trend--Product {
+        width: 234px;
+    }
+}

@@ -1,0 +1,177 @@
+@import '../../../Assets/style.less';
+.Footer--Links__Dropdown {
+    display: none;
+}
+.Footer {
+    padding-top: 35px;
+    padding: 70px;
+    border-top: 1px solid #dae0e6;
+    background: #e3e4e6;
+    height: 650px;
+}
+.Footer--Links {
+    display: flex;
+    justify-content: space-between;
+}
+.ssd {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.Footer--Links__Groups p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #222;
+    font-weight: 500;
+}
+.Footer--Links__Groups {
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.Footer--Links__Items {
+    height: 56px;
+    width: 210px;
+    background-color: #d7d8d9;
+    margin-left: -100px;
+    margin: 10px;
+}
+.Footer--Links__Items:hover {
+    background-color: #cacbcc;
+}
+.Product--Alert {
+    height: 56px;
+    width: 210px;
+    background-color: #cacbcc;
+    margin-left: -100px;
+    margin: 10px;
+}
+.Footer--Links__col h3 {
+    margin-left: 35px;
+    color: #888;
+    margin-top: 15px;
+}
+.Footer--Soft__Social--Media {
+    display: flex;
+    justify-content: space-around;
+    margin: 4px;
+    align-items: baseline;
+}
+.Soft--Social__Icon {
+    color: #1470cc;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Footer--App {
+    display: flex;
+    justify-content: space-around;
+    margin: 4px;
+}
+.App--Store__Link {
+    cursor: pointer;
+    background: #4d4d4d;
+    color: white;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 2px;
+    width: 100px;
+}
+.Google--Play__Link {
+    cursor: pointer;
+    background: #690;
+    color: white;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 2px;
+    width: 105px;
+}
+.Footer--App__Title {
+    margin: 7px;
+}
+.Footer--Social__Icon {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+}
+.Footer--Social {
+    display: flex;
+    align-items: center;
+}
+.Footer--Simple__Links--Group {
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.Simple__Links--Group__Item:hover {
+    color: #f44336;
+}
+.Simple__Links--Group__Item {
+    padding: 4px;
+}
+.Footer--Simple__Links--Groups {
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 10px;
+}
+.Facebook--Icon:hover {
+    cursor: pointer;
+    color: #3255a6;
+}
+.Twitter--Icon:hover {
+    cursor: pointer;
+    color: #1da1f3;
+}
+.Instagram--Icon:hover {
+    cursor: pointer;
+    color: #e5398f;
+}
+.Youtube--Icon:hover {
+    cursor: pointer;
+    color: #e63917;
+}
+.Linkedin--Icon:hover {
+    cursor: pointer;
+    color: #1470cc;
+}
+.Footer--Dropdown__List {
+    display: none;
+}
+@media (max-width: 567px) {
+    .Footer--Links {
+        display: none;
+    }
+    .Footer--Soft__Social--Media {
+        flex-wrap: wrap;
+    }
+    .Footer--Links__Dropdown {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Footer--Link__Dropdown {
+        width: 50%;
+    }
+    .Footer--Simple__Links--Group {
+        display: none;
+    }
+    .Footer--Simple__Links--Group {
+        display: none;
+    }
+    .Footer--Simple__Links--Groups {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Footer {
+        padding-top: 20px;
+    }
+    .Footer--Dropdown__List {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Footer--Dropdown {
+        width: 50%;
+    }
+}

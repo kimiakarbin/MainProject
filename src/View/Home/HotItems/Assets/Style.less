@@ -1,0 +1,75 @@
+@import '../../../../Assets/style.less';
+.container {
+    display: none;
+}
+.Hot--Items {
+    margin: 70px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+.Hot--Items__Title {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.Hot--Items__List {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.Hot--Item {
+    color: #888 !important ;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+@media (max-width: 567px) {
+    .Hot--Items {
+        display: none;
+    }
+    .Hot--Itemss {
+        display: flex;
+    }
+    .text {
+        line-height: 11px;
+    }
+    .more {
+        color: #1470cc;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .Hot--Item {
+        width: 50%;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    .container {
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 991px) {
+    .Hot--Items {
+        display: none !important;
+    }
+    .container {
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        line-height: 11px;
+    }
+    .more {
+        color: #1470cc;
+        margin: 10px;
+        margin-left: 10px;
+    }
+    .Hot--Item {
+        width: 50%;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+}
