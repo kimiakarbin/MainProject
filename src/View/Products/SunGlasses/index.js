@@ -1,9 +1,12 @@
 import React from 'react';
 import { RightOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import SunGlasses from './Assets/Image/SunGlasses.webp';
+import Sky_sea from './Assets/Image/Sky_sea.webp';
 import GGButton from '../../../ReuseableComponents/GGButton/GGButton';
+import Capture from './Assets/Image/Capture.JPG';
 import './Assets/Style.less';
 import clsx from 'clsx';
+import { Button } from 'antd';
 const Sunglasses = () => {
     return (
         <div>
@@ -20,10 +23,12 @@ const Sunglasses = () => {
             <div className="Layout--Detail__Clears">
                 <div className="Layout--Detail__Image">
                     <img src={SunGlasses} className="Detail--Image" />
+                    <div>Favorite</div>
+                    <div>Share</div>
                 </div>
                 <div className="Main--Info">
                     <div className="Info--Title">
-                        Elegant Women Fashion Acetate Sunglassses
+                        Elegant Women Fashion Acetate Sunglasses
                     </div>
                     <div className="Get--Price__Info">
                         <div className="Get--Price__Title">
@@ -57,51 +62,132 @@ const Sunglasses = () => {
                         </div>
                     </div>
                     <div className="Bottom--Line"></div>
-                    <div className="Prod--Props">
-                        <div className="Product--Property">Frame Material:</div>
-                        <div className="Prod--Prop">Acetate</div>
-                    </div>
-                    <div className="Prod--Props">
-                        <div className="Product--Property">
-                            Lenses Material:
-                        </div>
-                        <div className="Prod--Prop">Polarized</div>
-                    </div>
-                    <div className="Prod--Props">
-                        <div className="Product--Property">Style:</div>
-                        <div className="Prod--Prop">Fashion Sunglasses</div>
-                    </div>
-                    <div className="Prod--Props">
-                        <div className="Product--Property">
-                            Lenses Optical Attribute :
-                        </div>
-                        <div className="Prod--Prop">Gradient</div>
-                    </div>
-                    <div className="Prod--Props">
-                        <div className="Product--Property">Suitable for:</div>
-                        <div className="Prod--Prop">Women, Square Face</div>
-                    </div>
-                    <div className="Prod--Props">
-                        <div className="Product--Property">Lenses Color:</div>
-                        <div className="Prod--Prop">Smoke</div>
-                    </div>
+
+                    <table>
+                        <tr>
+                            <th className="Product--Property">
+                                Frame Material:
+                            </th>
+                            <td className="Prod--Prop">Acetate</td>
+                        </tr>
+                        <tr>
+                            <th className="Product--Property">Material:</th>
+                            <td className="Prod--Prop">Polarized</td>
+                        </tr>
+                        <tr>
+                            <th className="Product--Property">Style:</th>
+                            <td className="Prod--Prop">Fashion Sunglasses</td>
+                        </tr>
+                        <tr>
+                            <th className="Product--Property">
+                                Lenses Optical Attribute :
+                            </th>
+                            <td className="Prod--Prop">Gradient</td>
+                        </tr>
+                        <tr>
+                            <th className="Product--Property">Suitable for:</th>
+                            <td className="Prod--Prop">Women, Square Face</td>
+                        </tr>
+                        <tr>
+                            <th className="Product--Property">Lenses Color:</th>
+                            <td className="Prod--Prop">Smoke</td>
+                        </tr>
+                    </table>
                     <div className="Bottom--Line"></div>
-                    <div className="">
-                        <div className="Product--Property">Samples:</div>
-                        <div className="sample-order-info">
-                            <div className="Price--Property">US$ 8.5/Piece</div>
-                            <div className="Buying--Condition">
-                                1 Piece(Min.Order)
+                    <table>
+                        <tr>
+                            <th className="Product--Property">Samples:</th>
+                            <td className="sample-order-info">
+                                <div className="Price--Property">
+                                    US$ 8.5/Piece
+                                </div>
+                                <div className="Buying--Condition">
+                                    1 Piece(Min.Order)
+                                </div>
+                                <div
+                                    className={clsx(
+                                        'Request--Sample',
+                                        'BlackLink',
+                                    )}
+                                >
+                                    Request Sample
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th className="Product--Property">
+                                Customization:
+                            </th>
+                            <td className="sample-order-info">
+                                <div className="Buying--Condition">
+                                    Available
+                                </div>
+                                <div
+                                    className={clsx(
+                                        'Request--Sample',
+                                        'BlackLink',
+                                    )}
+                                >
+                                    Customized Request
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div className="Layout--Right">
+                    <div className="Contact--Button__Place">
+                        <h2>Contact Supplier</h2>
+                        <div className="Side--Cont__Supplier--Info">
+                            <img className="User--Pic" src={Capture} alt="" />
+
+                            <div>
+                                <div className="User--Name">
+                                    Ms. Maggie Wang
+                                </div>
+                                <div className="Supplier--Position">
+                                    Sales Manager
+                                </div>
                             </div>
+                        </div>
+
+                        <Button
+                            className="Button--Link__Contact"
+                            type="primary"
+                        >
+                            Contact Now
+                        </Button>
+                        <Button
+                            className="Supplier--Chat__Button"
+                            type="primary"
+                        >
+                            Chat with Supplier
+                        </Button>
+                        <div className={clsx('BlackLink', 'Add--To__Basket')}>
+                            Inquiry Basket
+                        </div>
+                    </div>
+
+                    <div className="Company--Homepage">
+                        <div className="Link--To__ComInfo">
+                            <img src={Sky_sea} className="Sky--Sea__pic" />
                             <div
-                                className={clsx('Request--Sample', 'BlackLink')}
+                                className={clsx('Sky--Title__Txt', 'BlackLink')}
                             >
-                                Request Sample
+                                Sky & Sea Optical MFY Co., Ltd.
                             </div>
+                        </div>
+                        <div className="Com--Place__Two">
+                            <div className="User--Type">
+                                <div className="Sign--Item">Diamond Member</div>
+                                <div className="Txt--Year">Since 2014</div>
+                            </div>
+                            <div className=""> Audited Supplier</div>
+                        </div>
+                        <div className="Info--Business__Type">
+                            Manufacturer/Factory & Trading Company
                         </div>
                     </div>
                 </div>
-                <div className="Layout--Right"></div>
             </div>
         </div>
     );
