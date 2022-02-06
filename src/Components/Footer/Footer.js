@@ -185,7 +185,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    TradeMessenger :{' '}
+                    TradeMessenger :
                     <MessageOutlined className="Soft--Social__Icon" />
                 </div>
                 <div className="Footer--Social">

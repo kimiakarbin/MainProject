@@ -1,15 +1,29 @@
 import React from 'react';
 import { RightOutlined, InfoCircleOutlined } from '@ant-design/icons';
+import Fashion from './Assets/Image/Fashion.webp';
+import Fashionnn from './Assets/Image/Fashionnn.webp';
 import SunGlasses from './Assets/Image/SunGlasses.webp';
+import FashionN from './Assets/Image/FashionN.webp';
 import Sky_sea from './Assets/Image/Sky_sea.webp';
 import GGButton from '../../../ReuseableComponents/GGButton/GGButton';
 import Capture from './Assets/Image/Capture.JPG';
 import './Assets/Style.less';
 import clsx from 'clsx';
 import { Button } from 'antd';
+import {
+    ShareAltOutlined,
+    HeartOutlined,
+    FacebookOutlined,
+    TwitterOutlined,
+    InstagramOutlined,
+    LinkedinOutlined,
+} from '@ant-design/icons';
+
+import { Carousel } from 'antd';
+
 const Sunglasses = () => {
     return (
-        <div>
+        <div className="Sunglasses">
             <div className="Detail--Top__Bar">
                 <GGButton className="GrayLink" value="Home " />
                 <RightOutlined />
@@ -22,9 +36,42 @@ const Sunglasses = () => {
             </div>
             <div className="Layout--Detail__Clears">
                 <div className="Layout--Detail__Image">
-                    <img src={SunGlasses} className="Detail--Image" />
-                    <div>Favorite</div>
-                    <div>Share</div>
+                    <Carousel effect="fade">
+                        <div>
+                            <img src={Fashion} className="Detail--Image" />
+                        </div>
+                        <div>
+                            <img src={Fashionnn} className="Detail--Image" />
+                        </div>
+                        <div>
+                            <img src={SunGlasses} className="Detail--Image" />
+                        </div>
+                        <div>
+                            <img src={FashionN} className="Detail--Image" />
+                        </div>
+                    </Carousel>
+
+                    <div className="Fav--Share__Wrap">
+                        <div className={clsx('BlackLink', 'Fav')}>
+                            <HeartOutlined />
+                            <GGButton
+                                className={clsx('Favorite--Wrap', 'BlackLink')}
+                                value="Favorite"
+                            />
+                        </div>
+                        <div className="Share--Wrap">
+                            <div>
+                                <ShareAltOutlined />
+                                Share
+                            </div>
+                            <div className="Social__Icon">
+                                <FacebookOutlined className="Facebook--Icon__Share" />
+                                <TwitterOutlined className="Twitter--Icon__Share" />
+                                <InstagramOutlined className="Instagram--Icon__Share" />
+                                <LinkedinOutlined className="Linkedin--Icon__Share" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="Main--Info">
                     <div className="Info--Title">
@@ -169,7 +216,7 @@ const Sunglasses = () => {
 
                     <div className="Company--Homepage">
                         <div className="Link--To__ComInfo">
-                            <img src={Sky_sea} className="Sky--Sea__pic" />
+                            <img src={Sky_sea} className="Sky--Sea__Pic" />
                             <div
                                 className={clsx('Sky--Title__Txt', 'BlackLink')}
                             >
