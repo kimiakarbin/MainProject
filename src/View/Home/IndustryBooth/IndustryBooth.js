@@ -11,6 +11,7 @@ import Aluminum_Window from './Assets/Image/Aluminum_Window.webp';
 import { Button } from 'antd';
 import clsx from 'clsx';
 import './Assets/Style.less';
+import { Link } from 'react-router-dom';
 
 const IndustryBooth = () => {
     return (
@@ -41,14 +42,18 @@ const IndustryBooth = () => {
                         alt=""
                     />
                 </div>
+
                 <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Sunglasses</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Sunglasses}
-                        alt=""
-                    />
+                    <Link to="products">
+                        <p>Sunglasses</p>
+                        <img
+                            className="Industry--Products__Image"
+                            src={Sunglasses}
+                            alt=""
+                        />
+                    </Link>
                 </div>
+
                 <div className={clsx('Industry--Products__Item', 'BlackLink')}>
                     <p>Medal</p>
                     <img

@@ -6,6 +6,7 @@ import SunGlasses from './Assets/Image/SunGlasses.webp';
 import FashionN from './Assets/Image/FashionN.webp';
 import Sky_sea from './Assets/Image/Sky_sea.webp';
 import GGButton from '../../../ReuseableComponents/GGButton/GGButton';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Capture from './Assets/Image/Capture.JPG';
 import './Assets/Style.less';
 import clsx from 'clsx';
@@ -20,12 +21,15 @@ import {
 } from '@ant-design/icons';
 
 import { Carousel } from 'antd';
+import App from '../../../App';
 
 const Sunglasses = () => {
     return (
         <div className="Sunglasses">
             <div className="Detail--Top__Bar">
-                <GGButton className="GrayLink" value="Home " />
+                <Link to="/">
+                    <GGButton className="GrayLink" value="Home " />
+                </Link>
                 <RightOutlined />
                 <GGButton className="GrayLink" value="Consumer Electronics  " />
                 <RightOutlined />

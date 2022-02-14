@@ -13,15 +13,31 @@ import FashionNewDesigneee from './Assets/Image/FashionNewDesigneee.webp';
 import FFashionNewDesigner from './Assets/Image/FFashionNewDesigner.webp';
 import fFashionNew from './Assets/Image/fFashionNew.webp';
 import FirstLayoutChild from './LayoutChildern/FirstLayoutChild/FirstLayoutChild';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 const { TabPane } = Tabs;
 function callback(key) {
     console.log(key);
 }
+const renderTabBar = (props, DefaultTabBar) => (
+    <Sticky bottomOffset={80}>
+        {({ style }) => (
+            <DefaultTabBar
+                {...props}
+                className="site-custom-tab-bar"
+                style={{ ...style }}
+            />
+        )}
+    </Sticky>
+);
 function LayoutMain() {
     return (
-        <div className="Layout--Main">
-            <Tabs defaultActiveKey="1" onChange={callback}>
+        <StickyContainer className="Layout--Main">
+            <Tabs
+                defaultActiveKey="1"
+                onChange={callback}
+                renderTabBar={renderTabBar}
+            >
                 <TabPane
                     className="Product--Description"
                     tab="Product Description"
@@ -100,7 +116,7 @@ function LayoutMain() {
                         </table>
                     </div>
                     <div className="Info--Title">Product Description</div>
-                    <div className="Description--Place"></div>
+
                     <div>
                         <table className="Main--Info__Table">
                             <tr className="Table--Description__Tr">
@@ -419,27 +435,34 @@ function LayoutMain() {
                         </div>
                     </div>
                 </TabPane>
+
                 <TabPane tab="Company Info." key="2">
-                    <Tabs defaultActiveKey="1" onChange={callback}>
-                        <TabPane tab=" Company Profile " key="1">
-                            <FirstLayoutChild />
-                        </TabPane>
-                        <TabPane tab=" Trade Capacity " key="2">
-                            Content of Tab Pane 2
-                        </TabPane>
-                        <TabPane tab=" Production Capacity " key="3">
-                            Content of Tab Pane 3
-                        </TabPane>
-                        <TabPane tab=" Company Show " key="4">
-                            Content of Tab Pane 4
-                        </TabPane>
-                    </Tabs>
+                    <StickyContainer>
+                        <Tabs
+                            defaultActiveKey="1"
+                            onChange={callback}
+                            renderTabBar={renderTabBar}
+                        >
+                            <TabPane tab=" Company Profile " key="1">
+                                <FirstLayoutChild />
+                            </TabPane>
+                            <TabPane tab=" Trade Capacity " key="2">
+                                Content of Tab Pane 2
+                            </TabPane>
+                            <TabPane tab=" Production Capacity " key="3">
+                                Content of Tab Pane 3
+                            </TabPane>
+                            <TabPane tab=" Company Show " key="4">
+                                Content of Tab Pane 4
+                            </TabPane>
+                        </Tabs>
+                    </StickyContainer>
                 </TabPane>
                 <TabPane tab="Customer Question & Answer" key="3">
                     Content of Tab Pane 3
                 </TabPane>
             </Tabs>
-        </div>
+        </StickyContainer>
     );
 }
 
