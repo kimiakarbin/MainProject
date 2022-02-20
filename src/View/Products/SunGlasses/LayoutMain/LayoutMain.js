@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs } from 'antd';
+import { Tabs, Input, Form, Button } from 'antd';
 import './Assets/Style.less';
 import FashionNewwDesigner from './Assets/Image/FashionNewwDesigner.webp';
 import FashionNewDesigner from './Assets/Image/FashionNewDesigner.webp';
@@ -13,6 +13,9 @@ import FashionNewDesigneee from './Assets/Image/FashionNewDesigneee.webp';
 import FFashionNewDesigner from './Assets/Image/FFashionNewDesigner.webp';
 import fFashionNew from './Assets/Image/fFashionNew.webp';
 import FirstLayoutChild from './LayoutChildern/FirstLayoutChild/FirstLayoutChild';
+import SecondLayoutChild from './LayoutChildern/SecondLayoutChild/SecondLayoutChild';
+import ThirdLayoutChild from './LayoutChildern/ThirdLayoutChild/ThirdLayoutChild';
+import ForthLayoutChild from './LayoutChildern/ForthLayoutChild/ForthLayoutChild';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 const { TabPane } = Tabs;
@@ -31,6 +34,13 @@ const renderTabBar = (props, DefaultTabBar) => (
     </Sticky>
 );
 function LayoutMain() {
+    const onFinish = (values) => {
+        console.log('Success:', values);
+    };
+
+    const onFinishFailed = (errorInfo) => {
+        console.log('Failed:', errorInfo);
+    };
     return (
         <StickyContainer className="Layout--Main">
             <Tabs
@@ -443,23 +453,69 @@ function LayoutMain() {
                             onChange={callback}
                             renderTabBar={renderTabBar}
                         >
-                            <TabPane tab=" Company Profile " key="1">
+                            <TabPane
+                                tab=" Company Profile "
+                                data-achor="richNav_1"
+                                key="1"
+                            >
                                 <FirstLayoutChild />
                             </TabPane>
-                            <TabPane tab=" Trade Capacity " key="2">
-                                Content of Tab Pane 2
+                            <TabPane
+                                data-achor="richNav_2"
+                                tab=" Trade Capacity "
+                                key="2"
+                            >
+                                <SecondLayoutChild />
                             </TabPane>
                             <TabPane tab=" Production Capacity " key="3">
-                                Content of Tab Pane 3
+                                <ThirdLayoutChild />
                             </TabPane>
                             <TabPane tab=" Company Show " key="4">
-                                Content of Tab Pane 4
+                                <ForthLayoutChild />
                             </TabPane>
                         </Tabs>
                     </StickyContainer>
                 </TabPane>
                 <TabPane tab="Customer Question & Answer" key="3">
-                    Content of Tab Pane 3
+                    <Form
+                        className="Send--Message__TextArea"
+                        name="basic"
+                        labelCol={{ span: 8 }}
+                        wrapperCol={{ span: 16 }}
+                        initialValues={{ remember: true }}
+                        onFinish={onFinish}
+                        onFinishFailed={onFinishFailed}
+                        autoComplete="off"
+                    >
+                        <Form.Item
+                            name="Message"
+                            rules={[
+                                {
+                                    required: true,
+                                    message: 'Please enter your question',
+                                },
+                            ]}
+                        >
+                            <Input.TextArea
+                                name="content"
+                                id="inquiryContent"
+                                cols="1000"
+                                rows="2"
+                                placeholder="Enter your question about this product"
+                                maxlength="4000"
+                            />
+                        </Form.Item>
+                        <div className="Send--Message__Form--Desc">
+                            Once receive your question, the supplier will answer
+                            you as soon as possible.
+                        </div>
+
+                        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                            <Button type="primary" htmlType="submit">
+                                Send
+                            </Button>
+                        </Form.Item>
+                    </Form>
                 </TabPane>
             </Tabs>
         </StickyContainer>

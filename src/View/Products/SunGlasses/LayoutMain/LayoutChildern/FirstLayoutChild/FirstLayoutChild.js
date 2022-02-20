@@ -24,7 +24,7 @@ const ReadMore = ({ children }) => {
 
 function FirstLayoutChild() {
     return (
-        <div className="First--Layout__Child">
+        <div className="First--Layout__Child" id="richNav_1">
             <div className="First--Layout__Table">
                 <div className="Com--Profile__Info">
                     <h2 class="Company--Profile__H2">Company Profile</h2>
