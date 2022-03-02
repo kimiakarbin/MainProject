@@ -14,6 +14,40 @@ import './Assets/Style.less';
 import { Link } from 'react-router-dom';
 
 const IndustryBooth = () => {
+    const Picture = [
+      {
+        Picture: Sunglasses,
+        Desc: "Sunglasses",
+      },
+      {
+        Picture: Wig,
+        Desc: "Wig",
+      },
+      {
+        Picture: Medal,
+        Desc: "Medal",
+      },
+      {
+        Picture: Human_Hair,
+        Desc: "Human Hair",
+      },
+      {
+        Picture: Door,
+        Desc: "Door",
+      },
+      {
+        Picture: Decoration_Materials,
+        Desc: "Decoration Materials",
+      },
+      {
+        Picture: China_Building,
+        Desc: "China Building",
+      },
+      {
+        Picture: Aluminum_Window,
+        Desc: "Aluminum Window",
+      },
+    ];
     return (
         <div className="Industry--Booth">
             <div className="Industry--Booth__Item">
@@ -34,74 +68,21 @@ const IndustryBooth = () => {
                 </Button>
             </div>
             <div className="Industry--Products">
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Wig</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Wig}
-                        alt=""
-                    />
-                </div>
-
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
+                {Picture.map((value) => (
+                      
+                     <div className={clsx('Industry--Products__Item', 'BlackLink')}>
                     <Link to="products">
-                        <p>Sunglasses</p>
+                        <p>{value.Desc}</p>
                         <img
                             className="Industry--Products__Image"
-                            src={Sunglasses}
+                            src={value.Picture}
                             alt=""
                         />
                     </Link>
                 </div>
-
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Medal</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Medal}
-                        alt=""
-                    />
-                </div>
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Human Hair</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Human_Hair}
-                        alt=""
-                    />
-                </div>
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Door</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Door}
-                        alt=""
-                    />
-                </div>
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Decoration Materials</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Decoration_Materials}
-                        alt=""
-                    />
-                </div>
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>China Building</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={China_Building}
-                        alt=""
-                    />
-                </div>
-                <div className={clsx('Industry--Products__Item', 'BlackLink')}>
-                    <p>Aluminum Window</p>
-                    <img
-                        className="Industry--Products__Image"
-                        src={Aluminum_Window}
-                        alt=""
-                    />
-                </div>
+                  
+                
+                ))};
             </div>
         </div>
     );
